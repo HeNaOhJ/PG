@@ -183,7 +183,7 @@ display: none;
     }
     .frax:hover .subt{
         bottom: -100px;
-        text-transform: uppercase;
+        text-transform: uppercase; 
         text-shadow:0px 0px 5px #55e7fc ,0px 0px 10px #55e7fc ,0px 0px 20px #55e7fc ;
     }
 }
