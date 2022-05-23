@@ -18,7 +18,6 @@
             <div class="b t5" id="bt5">Evaluate</div>
         </div>
 <div class="rg" id="rg">
-<?php 	$conexion = new mysqli("localhost","root","","pg");  ?>
 <div id="kj2" class="cajaa cj12">
 			
     <center>
@@ -30,27 +29,6 @@
 <input class="cajon1" type="submit" name="log">
 	</form></center>
 	<div class="nombreb">
-	<?php 
-
-if (isset($_POST['log'])){
-	$name=$_POST['nombrae'];
-	$cla=$_POST['clav'];
-	$sqlx = "SELECT * FROM usuarios";
-	$ejecutar1=mysqli_query($conexion, $sqlx);
-	while ($datoo=$ejecutar1->fetch_assoc()){
-		if ($name==$datoo['nombre']) {
-			?>
-			<script>alert("ese nombre ya está registrado");</script>
-	 <?php 
-			break;
-			}
-		}
-	if($name!=$datoo['nombre']){
-		$sqly="INSERT INTO usuarios(nombre,clave) VALUES ('$name','1111')"; 
-		$ejecutar=mysqli_query($conexion, $sqly); 
-		}
-    }
-	 ?> 
 	</div>
 		</div>
 
@@ -64,27 +42,6 @@ if (isset($_POST['log'])){
   <center><input class="cajon" type="password" name="clave" placeholder="clave"></center>
   <center><input class="cajon1" type="submit" name="enviar"></center>
     </form>
-
-<div class="nombreb">
-    <?php 
- if ($conexion){
-if (isset($_POST['enviar'])){
-$nombre=$_POST['nmbre'];
-$sql = "SELECT clave,id FROM usuarios WHERE nombre='$nombre'";
-$resultado=$conexion->query($sql);
-$clave=$_POST['clave'];
-$dato=$resultado->fetch_assoc();
-  if ($clave==$dato['clave']){
-session_start();
-$_SESSION['id'] = $dato['id'];
-header("Location:pagina.php");
-                  }
-}
- }else{
-  echo " conexion f"; 
- }
-
-?>
 </div></div>
 <div class="a coso" onclick="ingresar()">Ingresar</div>
 <div class="a coso1" onclick="registrar()">Registrarme</div></div> </div>
