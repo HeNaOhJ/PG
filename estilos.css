@@ -129,7 +129,6 @@ display: none;
 .pfalsa2{
     display: block;
     position: relative;
-    top: 10%;
     min-width: 100%;
     max-width: 500px;
     height:100%;
@@ -137,7 +136,7 @@ display: none;
 }
 .frax{
     position: relative;
-    top:80px;
+    top:10%;
     background: url(logoi.png);
     background-size: 100%;
     width: 200px;
