@@ -141,9 +141,9 @@ display: none;
     .pfalsa2{
         display: block;
         background: url(back.jpg);
-        background-size:100%;
+        background-size:500px;
         width: 100%;
-        height:-webkit-fill-available;
+        height:500px;
         overflow-x: hidden;
     }
     .frax{
