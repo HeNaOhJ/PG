@@ -134,6 +134,7 @@ display: none;
 
 .pfalsa2{
     display: block;
+    position: absolute;
     background: url(back.jpg);
     background-size:500px;
     width: 100%;
