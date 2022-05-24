@@ -118,7 +118,7 @@ transition: .5s;
 border: solid blue;
 }
 .pfalsa{
-    background: url(2.png);
+    background:gray;
     background-size:100%;
     width: 100%;
     height:-webkit-fill-available;
@@ -135,8 +135,6 @@ display: none;
 .pfalsa2{
     display: block;
     position: absolute;
-    background: url(back.jpg);
-    background-size:100%;
     width: 500px;
     height:100%;
     z-index: 1;
