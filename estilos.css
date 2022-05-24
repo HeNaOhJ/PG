@@ -128,8 +128,10 @@ display: none;
 
 .pfalsa2{
     display: block;
-    position: absolute;
-    width: 500px;
+    position: relative;
+    top: 10%;
+    min-width: 100%;
+    max-width: 500px;
     height:100%;
     z-index: 1;
 }
