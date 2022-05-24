@@ -131,8 +131,53 @@ width:  50%;
 height: 50%;
 display: none;
 }
+
 .pfalsa2{
-    display: none;
+    display: block;
+    background: url(back.jpg);
+    background-size:500px;
+    width: 100%;
+    height:500px;
+    overflow-x: hidden;
+}
+.frax{
+    position: relative;
+    top:80px;
+    background: url(logoi.png);
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+.imag{
+    position: relative;
+    left: -197px;
+width: 595px;
+height: 342px;
+top: -71px;
+    opacity: 0;
+}
+.frax:hover {
+    background:none;
+}
+.frax:hover .imag{
+    opacity: 1;
+}
+.subt{
+    position: absolute;
+    bottom: -50px;
+    left: -80px;
+    font-size: 2.4em;
+    text-transform: capitalize;
+    letter-spacing: 7px;
+    color: white;
+    width: 200%;
+    font-family: monospace;
+    transition: 1s;
+}
+.frax:hover .subt{
+    bottom: -100px;
+    text-transform: uppercase;
+    text-shadow:0px 0px 5px #55e7fc ,0px 0px 10px #55e7fc ,0px 0px 20px #55e7fc ;
 }
 @media only screen and (max-width:500px) {
     .pfalsa{
