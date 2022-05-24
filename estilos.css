@@ -123,7 +123,6 @@ border: solid blue;
     background-size:100%;
     width: 100%;
     height:-webkit-fill-available;
-    display: none;
 }
 #rg{
     position: absolute;
@@ -133,7 +132,10 @@ width:  50%;
 height: 50%;
 display: none;
 }
-@media only screen and (max-width:1000px) {
+.pfalsa2{
+    display: none;
+}
+@media only screen and (max-width:500px) {
     .pfalsa{
         display: none;
     }
