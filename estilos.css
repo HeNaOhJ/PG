@@ -27,7 +27,7 @@ border-radius: 9px;
     }
 
     .a{
-    position: absolute;
+    position: relative;
     padding: 20px 36px;
     text-align: center;
     color: #fff;
@@ -41,13 +41,9 @@ border-radius: 9px;
     overflow: hidden;
 }
 .coso{
-    top: 50px;
-    left: 5%;
 }
 .coso1{
     background: linear-gradient(90deg,#755bea,#ff72c0);
-    top: 50px;
-    right:5%;
 }
 .dbarra{
 position: absolute;
@@ -84,7 +80,7 @@ justify-items: self-end;
 }
 .casa{
 position: absolute;
-top: 5%;
+bottom: 15%;
 right: -55px;
 cursor: pointer;
 width: 50px;
@@ -177,4 +173,9 @@ top: -71px;
     bottom: -100px;
     text-transform: uppercase;
     text-shadow:0px 0px 5px #55e7fc ,0px 0px 10px #55e7fc ,0px 0px 20px #55e7fc ;
+}
+.center{
+    position: relative;
+    bottom: 30%;
+    text-align: -webkit-center;
 }
