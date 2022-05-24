@@ -133,7 +133,6 @@ width:  50%;
 height: 50%;
 display: none;
 }
-@media only screen and (max-width:500px) {
     .pfalsa{
         display: none;
     }
@@ -184,4 +183,3 @@ display: none;
         text-transform: uppercase; 
         text-shadow:0px 0px 5px #55e7fc ,0px 0px 10px #55e7fc ,0px 0px 20px #55e7fc ;
     }
-}
