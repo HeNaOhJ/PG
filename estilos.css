@@ -138,6 +138,7 @@ display: none;
     background-size:500px;
     width: 100%;
     height:500px;
+    z-index: 1;
     overflow-x: hidden;
 }
 .frax{
