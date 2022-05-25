@@ -92,6 +92,7 @@ border-bottom: solid blueviolet;
 border-left: none;
 border-right: solid blueviolet;
 color: white;
+z-index: 5;
 }
 .b{
 position: relative;
