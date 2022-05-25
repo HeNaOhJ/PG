@@ -50,8 +50,20 @@
    <center><div class="frax" ><img class="imag" src="logog.gif" ><br>
    <div class="subt">arreglamos tus problemas</div></div></center></div>    
 </div>
-<script>
-        function registrar(){
+<script>blat.style.left="-200px";
+  function barra(){  
+      if (blat.style.left!="-200px") {
+          blat.style.left="-200px";            
+      }else{
+          blat.style.left="0px";
+      }
+  }
+  function rr(){
+      barra();
+      rg.style.opacity="1";
+      rg.style.display="block";
+  }
+  function registrar(){
 	kj2.style.opacity="1";
 	kj3.style.opacity="0";
 	kj2.style.zIndex=20;
