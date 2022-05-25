@@ -28,6 +28,7 @@ border-radius: 9px;
     }
 
     .a{
+        display: grid;
     position: relative;
     padding: 20px 36px;
     text-align: center;
@@ -173,6 +174,10 @@ top: -71px;
 }
 .center{
     position: relative;
+    display: grid;
     bottom: 30%;
     text-align: -webkit-center;
+    grid-template-columns: max-content;
+    gap: 1em;
+    height: 10%;
 }
