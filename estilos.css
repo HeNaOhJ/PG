@@ -177,7 +177,8 @@ top: -71px;
     display: grid;
     bottom: 30%;
     text-align: -webkit-center;
-    grid-template-columns: max-content;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
     height: 10%;
+    justify-items: center;
 }
