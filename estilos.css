@@ -1,4 +1,5 @@
 body{
+    display: flex;
     padding: 0;
     margin: 0;
 font-family: sans-serif;
@@ -80,37 +81,41 @@ display: grid;
 justify-items: self-end;
 }
 .casa{
-position: relative;
-bottom: 15%;
-right: -55px;
-cursor: pointer;
-width: 50px;
-/* height: 50px; */
-padding: 8% 1;
-background: black;
-border-top-right-radius: 30px;
-border-bottom-right-radius: 30px;
-border-top: solid blueviolet;
-border-bottom: solid blueviolet;
-border-left: none;
-border-right: solid blueviolet;
-color: white;
-z-index: 5;
+    position: absolute;
+    bottom: 10%;
+    right: -90px;
+    cursor: pointer;
+    width: 50px;
+    /* height: 50px; */
+    padding: 30% 10%;
+    background: black;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: solid blueviolet;
+    border-bottom: solid blueviolet;
+    border-left: none;
+    border-right: solid blueviolet;
+    color: white;
+    z-index: 5;
+    align-self: center;
+    font-size: 2em;
 }
 .b{
-position: relative;
-padding: 10px 40px 10px 15px;
-border: solid white;
-display: grid;
-text-decoration: none;
-align-content: right;
-min-width: 50px;
-max-width: 100px;
-grid-column-end: center;
-margin: 35px;
-border-radius: 30px;
-color: lightblue;
-transition: .5s;
+    position: relative;
+    padding: 5% 10%;
+    border: solid white;
+    display: grid;
+    text-decoration: none;
+    align-content: right;
+    min-width: 50px;
+    /* max-width: 100px; */
+    grid-column-end: center;
+    margin: 10% 18%;
+    border-radius: 30px;
+    color: lightblue;
+    transition: .5s;
+    font-size: 2.8em;
+    max-height: 80px;
 }
 .b:hover{
 border: solid blue;
@@ -126,9 +131,11 @@ display: none;
 
 .pfalsa2{
     position: absolute;
+    /* display: flex; */
+    width: 100%;
     left: 0%;
-    min-width: 30%;
-    max-width: 500px;
+    /* min-width: 30%; */
+    /* max-width: 500px; */
     /* min-height: 500px; */
     /* height: 50%; */
     z-index: 1;
@@ -137,8 +144,8 @@ display: none;
     margin:10%;
     background: url(Logoii.png);
     background-size: 100%;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height:400px;
 }
 .imag{
     position: relative;
@@ -156,18 +163,18 @@ height: 100%;
 }
 .subt{
     position: relative;
-    bottom:1.5em;
-    left: -80px;
-    font-size: 2.4em;
+    /* bottom: 1.5em; */
+    left: -25%;
+    font-size: 4.4em;
     text-transform: capitalize;
     letter-spacing: 7px;
     color: white;
-    width: 200%;
+    width: 150%;
     font-family: monospace;
     transition: 1s;
 }
 .frax:hover .subt{
-    bottom: 1em;
+    bottom: -1em;
     text-transform: uppercase;
     text-shadow:0px 0px 5px #55e7fc ,0px 0px 10px #55e7fc ,0px 0px 20px #55e7fc ;
 }
