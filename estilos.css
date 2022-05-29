@@ -61,6 +61,7 @@ display: none;
     text-align: center;
     /* display: grid; */
     justify-items: self-end;
+    z-index: 5;
 }
 .casa{
     position: absolute;
@@ -73,10 +74,7 @@ display: none;
     background: black;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    /* border-top: solid blueviolet; */
-    /* border-bottom: solid blueviolet; */
     border-left: none;
-    /* border-right: solid blueviolet; */
     color: white;
     z-index: 5;
     align-self: center;
