@@ -173,6 +173,7 @@ display: none;
     width: 70%;
     margin: 15%;
     height: min-content;
+    align-self: flex-end;
 }
 
 .coso1{
