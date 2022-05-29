@@ -169,7 +169,7 @@ display: none;
     display: flex;
     justify-content: center;    
     flex-wrap: wrap;
-    border:solid red;
+    border:solid burlywood;
     width: 70%;
     margin: 15%;
     height: min-content;
