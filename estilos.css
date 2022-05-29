@@ -172,7 +172,6 @@ display: none;
 .a{
     position: relative;
     padding: 20px 50px;
-    background: gainsboro;
     margin: 10px 15%;
     border-radius: 30px;
     background: linear-gradient(90deg,#0162c8,#55e7fc);
