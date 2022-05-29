@@ -103,12 +103,13 @@ display: none;
     border: solid blue;
 }
 #rg{
-    position: relative;
+    position: absolute;
     top: 28%;
-    left:8%;
+    left:-100%;
     width:  50%;
     height: 50%;
-    display: none;
+    display: block;
+    background: rgba(171, 171, 171, 0.495);
 }
 
 .pfalsa2{
@@ -173,6 +174,7 @@ display: none;
     margin: 15%;
     height: min-content;
     align-self: flex-end;
+    opacity: 0;
 }
 
 .coso1{
