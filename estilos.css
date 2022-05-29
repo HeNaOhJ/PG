@@ -69,16 +69,16 @@ left: 16%;
 right: 16%;
 }
 .blateral{
-    position: relative;
-left: -200px;
-top: 0px;
-width: 200px;
-height: 100%;
-background: black;
-transition: .7s;
-text-align: center;
-display: grid;
-justify-items: self-end;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 70%;
+    height: 100%;
+    background: black;
+    transition: .7s;
+    text-align: center;
+    /* display: grid; */
+    justify-items: self-end;
 }
 .casa{
     position: absolute;
