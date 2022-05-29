@@ -125,28 +125,27 @@ display: none;
 }
 
 .pfalsa2{
-    display: block;
     position: absolute;
+    left: 0%;
     min-width: 30%;
     max-width: 500px;
     /* min-height: 500px; */
-    height: 50%;
+    /* height: 50%; */
     z-index: 1;
 }
 .frax{
-    position: relative;
-    top:10%;
-    background: url(logoi.png);
+    margin:10%;
+    background: url(Logoii.png);
     background-size: 100%;
     width: 200px;
     height: 200px;
 }
 .imag{
     position: relative;
-    left: -197px;
-width: 595px;
-height: 342px;
-top: -71px;
+    left: 0px;
+top:0px;
+width: 100%;
+height: 100%;
     opacity: 0;
 }
 .frax:hover {
