@@ -149,6 +149,7 @@ display: none;
     background-size: 100%;
     width: 300px;
     height:300px;
+    transition: 2s;
 }
 .imag{
     position: relative;
@@ -175,7 +176,7 @@ height: 100%;
     width: 80%;
     padding: 1% 10%;
     font-family: monospace;
-    transition: 1s;
+    transition: 2s;
 }
 .frax:hover .subt{
     bottom: -1em;
