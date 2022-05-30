@@ -3,7 +3,7 @@ body{
     padding: 0;
     margin: 0;
 font-family: sans-serif;
-background: url("F1.jpeg");
+background: url("F2.jpeg");
 }
 .cajaa{
     position: relative;
@@ -167,10 +167,10 @@ display: none;
 .center{
     position: relative;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
-    margin: 10%;
+    width: 90%;
+    margin: 0% 5%;
     height: min-content;
     align-self: flex-end;
     opacity: 0;
@@ -178,13 +178,13 @@ display: none;
 
 .a{
     position: relative;
-    padding: 30px 50px;
-    margin: 20px 15%;
+    padding: 20px 40px;
+    margin: 20px 12%;
     border-radius: 30px;
     background: linear-gradient(90deg,#0162c8,#55e7fc);
     overflow: hidden;
     letter-spacing: 2px;
-    font-size: 35px;
+    font-size: 29px;
     text-align: center;
     text-transform: uppercase;
     height: min-content;
