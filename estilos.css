@@ -102,12 +102,13 @@ display: none;
 }
 #rg{
     position: absolute;
-    top: 28%;
-    left:-100%;
-    width:  50%;
+    /* top: 28%; */
+    left: -100%;
+    width: 80%;
     height: 50%;
-    display: block;
-    background: rgba(171, 171, 171, 0.495);
+    align-self: center;
+    border-radius: 50px;
+    background: rgba(171, 171, 171, 0.595);
 }
 
 .pfalsa2{
