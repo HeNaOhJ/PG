@@ -175,19 +175,19 @@ display: none;
     opacity: 0;
 }
 
-.coso1{
-    background: linear-gradient(90deg,#755bea,#ff72c0);
-    }
 .a{
     position: relative;
-    padding: 20px 50px;
-    margin: 10px 9%;
+    padding: 30px 50px;
+    margin: 20px 15%;
     border-radius: 30px;
     background: linear-gradient(90deg,#0162c8,#55e7fc);
     overflow: hidden;
     letter-spacing: 2px;
-    font-size: 19px;
+    font-size: 35px;
     text-align: center;
     text-transform: uppercase;
     height: min-content;
+    }
+.coso1{
+    background: linear-gradient(90deg,#755bea,#ff72c0);
     }
