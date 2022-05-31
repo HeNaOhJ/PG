@@ -4,6 +4,7 @@ body{
     margin: 0;
 font-family: sans-serif;
 background: url("F2.jpeg");
+background-size: 20%;
 }
 .cajaa{
     position: relative;
@@ -190,4 +191,11 @@ display: none;
     }
 .coso1{
     background: linear-gradient(90deg,#755bea,#ff72c0);
+    }
+    .info{
+        position: absolute;
+        background: #0162c8;
+        width: 50%;
+        height: 50%;
+        align-self: center;
     }
