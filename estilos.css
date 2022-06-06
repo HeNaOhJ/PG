@@ -2,7 +2,7 @@ body{
     display: flex;
     padding: 0;
     margin: 0;
-font-family: 'Lora';
+font-family: 'Lora',serif;
 background: url("F3.jpeg");
 background-size: 20%;
 }
@@ -157,7 +157,7 @@ background-size: 20%;
     color: white;
     width: 80%;
     padding: 1% 10%;
-    font-family: 'Lora';
+    font-family: 'Lora',serif;
     transition: 2s;
 }
 .frax:hover .subt{
