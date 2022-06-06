@@ -1,0 +1,104 @@
+
+body{
+    background: url("F3.jpeg");
+    background-size: 20%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+            }
+    .salir{
+    position: absolute;
+    align-self: flex-end;
+    bottom: 2%;
+    right: 2%;
+    border: none;
+    background: antiquewhite;
+    padding: 20px 40px;
+    border: solid red;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    }
+.base{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0% 5%;
+    height: min-content;
+    align-self: flex-end;
+}
+.cu{
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    letter-spacing: 2px;
+    font-size: 183%;
+    text-align: center;
+    text-transform: uppercase;
+    height: min-content;
+    }
+.inf{
+    padding: 20px 0;
+    /* border: solid #55e7fc; */
+    width: 17.6em;
+    margin: 10% 0;
+    background: hsl(160deg 100% 75% / 42%);
+    border-radius: 20px;
+}
+.in{
+    padding: 20px 0;
+    /* border: solid #55e7fc; */
+    width: 17.6em;
+    margin: 10% 0;
+    background: hsl(160deg 100% 75% / 42%);
+    border-radius: 20px;
+    height: 150px;
+}
+.o1{
+    height: 80px;
+    padding: 60px 0 30px;
+}
+.img{
+    position: absolute;
+    margin: -25px 20px;
+    background: aqua;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+.i{
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    padding: 10px;
+    background: #9f7fff40;
+    right: 40px;
+
+}
+.o3{
+    margin: 10% 0 0%;
+}
+.teoria{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0%;
+    left: 0%;
+    background: black;
+    overflow: hidden;
+    transition: 2s;
+}	
+.volv{
+    position: relative;
+    background: pink;
+    margin: 10px;
+    padding: 10px 20px 30px 20px;
+    border-radius: 100px;
+    height: 10px;
+    width: 10px;
+    font-size: 30px;
+}
