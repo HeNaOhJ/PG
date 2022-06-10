@@ -4,7 +4,7 @@ body{
     margin: 0;
 font-family: cursive;
 background: url("F3.jpeg");
-background-size: 500px;
+background-size: 400px;
 }
 .dbarra{
     position: absolute;
@@ -235,6 +235,7 @@ background-size: 500px;
     }       
     .cit{
         position: absolute;
+        /* top: 10%; */
         margin: 5% 15% 10px;
         width: 60%;
         max-width: 900px;
@@ -242,19 +243,19 @@ background-size: 500px;
         transition: 2s;
         overflow: hidden;
         font-size: 30px;
-        height:-webkit-fill-available;
+        height: -webkit-fill-available;
         padding: 5%;
         opacity: 0;
         display: none;
     }
     .kga{
         position: relative;
-        margin: -20px 20px;
+        margin: 0px 0px;
         display: flex;
         flex-wrap: wrap;
         background: none;
         padding: 20px;
-        height: 58px;
+        height: 40px;
     }
     .est{
         position: relative;
@@ -272,26 +273,26 @@ background-size: 500px;
         text-align: center;
     }
     .o1{
-        height: 80px;
-        padding: 60px 0 30px;
+        position: relative;height: 80px;
+        width: 100%;/* padding: 60px 0 30px; */
     }
     .img{
         position: absolute;
-        margin: -25px 20px;
+        margin: 5px 0px;
         background: url(usuario.png);
         background-size: 100%;
-        width: 110px;
-        height: 110px;
+        width: 80px;
+        height: 80px;
         border-radius: 100%;
         border: solid ;
     }
     .coment{
         font-size: 70%;
     position: relative;
-    right: 1%;
+    /* left: 0%; */
     text-align: right;
-    width: 350px;    border-block-end: inherit;
-    }
+    width: 600px;    border-block-end: inherit;
+    align-self: center;place-self: center;justify-self: center;/* height: auto; */border: solid;}
     
     @media only screen and (max-width:1080px) {
         .inf{
