@@ -20,7 +20,7 @@
     border-radius: 20px;
 }
 .ing{
-    position: relative;
+    position: absolute;
     width: 90%;
     height: 0px;
     background: rgba(50, 205, 171, 0.781);
@@ -30,7 +30,7 @@
     transition: 2s;
 }
 .reg{
-    position: relative;
+    position: absolute;
     width: 90%;
     height:0px;
     background: rgba(50, 205, 171, 0.781);
