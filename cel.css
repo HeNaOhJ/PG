@@ -28,6 +28,7 @@
     margin: 3%;
     height: 0px;
     transition: 2s;
+    top: 0%;
 }
 .reg{
     position: absolute;
@@ -38,6 +39,7 @@
     margin: 3%;
     height: 0px;
     transition: 2s;
+    top: 0%;
 }
 .input{
     width: 300px;
