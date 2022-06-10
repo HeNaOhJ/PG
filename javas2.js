@@ -7,8 +7,8 @@ function teoria(){
     }
 }
 function chatting(){
-    if (cit.style.width!="80%") {
-        cit.style.width="80%";        
+    if (cit.style.width!="70%") {
+        cit.style.width="70%";        
     }else{
         cit.style.width="0px";
     }
