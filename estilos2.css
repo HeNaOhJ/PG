@@ -1,11 +1,11 @@
 
 body{
     background: url("F3.jpeg");
-    background-size: 400px;
+    background-size: 500px;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
     .salir{
     position: absolute;
@@ -143,7 +143,7 @@ body{
     overflow: hidden;
     text-align: -webkit-center;
     font-size: 30px;
-    height: 85%;
+    height: 50%;
 }
 .est{
     position: relative;
