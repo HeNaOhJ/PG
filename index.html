@@ -12,12 +12,13 @@
     </div>
         <div class="blateral" id="blat">
         <div class="casa" onclick="barra()">:)</div>
-            <div class="b t2" id="bt2" onclick="rr()">Registrarme</div>
-            <div class="b t1" id="bt1">Información</div>
-            <div class="b t3" id="bt3">Teoría</div>
-            <div class="b t4" id="bt4">Acerca de Nosotros</div>
+            <div class="b" id="bt2" onclick="rr()">Registrarme</div>
+            <div class="b" id="bt1" onclick="inyy()">Información</div>
+            <div class="b" id="bt4" onclick="op()">Opiniones</div>
+            <div class="b" id="bt4">Acerca de Nosotros</div>
         </div>
 <div class="rg" id="rg">
+<?php  $conexion = new mysqli("sql309.epizy.com","epiz_31923291","PN78r9HoagBpD","epiz_31923291_PG");  ?>
 <div id="kj2" class="cajaa cj12">
 			
     <center>
@@ -29,6 +30,27 @@
 <center><input class="cajon1" type="submit" name="log"></center>
 	</form>
 	<div class="nombreb">
+    <?php 
+
+if (isset($_POST['log'])){
+  $name=$_POST['nombrae'];
+  $cla=$_POST['clav'];
+  $sqlx = "SELECT * FROM usuarios";
+  $ejecutar1=mysqli_query($conexion, $sqlx);
+  while ($datoo=$ejecutar1->fetch_assoc()){
+    if ($name==$datoo['nombre']) {
+      ?>
+      <script>alert("ese nombre ya está registrado");</script>
+   <?php 
+      break;
+      }
+    }
+  if($name!=$datoo['nombre']){
+    $sqly="INSERT INTO usuarios(nombre,clave) VALUES ('$name','$cla')"; 
+    $ejecutar=mysqli_query($conexion, $sqly); 
+    }
+    }
+   ?> 
 	</div>
 		</div>
 
@@ -42,7 +64,25 @@
   <center><input class="cajon" type="password" name="clave" placeholder="clave"></center>
   <center><input class="cajon1" type="submit" name="enviar"></center>
     </form>
-</div>
+</div><?php 
+ if ($conexion){
+if (isset($_POST['enviar'])){
+$nombre=$_POST['nmbre'];
+$sql = "SELECT clave,id FROM usuarios WHERE nombre='$nombre'";
+$resultado=$conexion->query($sql);
+$clave=$_POST['clave'];
+$dato=$resultado->fetch_assoc();
+  if ($clave==$dato['clave']){
+session_start();
+$_SESSION['id'] = $dato['id'];
+header("Location:pagina.php");
+                  }
+}
+ }else{
+  echo " conexion f"; 
+ }
+
+?>
 </div>
 <div class="center" id="center">
   <div class="a coso" onclick="ingresar()">Ingresar</div>
@@ -52,6 +92,59 @@
 <div class="pfalsa2" id="pfalsa2">
    <center><div class="frax" ><img class="imag" src="logog.gif" ><br>
    <div class="subt">arreglamos tus problemas</div></div></center></div>    
+   <div class="cel" id="cel">
+     <div class="bt regis" onclick="ingre()">Ya tengo cuenta</div>
+     <div class="bt ingre" onclick="regs()">Quiero Comenzar</div>
+     <div class="bt ingre" onclick="op()">Ver opiniones</div>
+
+
+     <div class="ing" id="ing">
+Entonces ingresa <br><br>
+<form method="post">
+       Ingresa tu Usuario
+	<input class="input" type="text" name="nmbre" placeholder="nombre">
+  Ingresa tu Clave
+  <input class="input" type="password" name="clave" placeholder="clave">
+  <input class="cajon1" type="submit" name="enviar">
+</form>
+     </div>
+     <div class="reg" id="reg">
+       Registremonos entonces :) <br><br>
+	<form action="index.php" method="POST" enctype="multipart/form-data">
+    Nombre:
+<input class="input" type="text" name="nombrae" placeholder="nombre">
+Clave:
+<input class="input" type="number" name="clav" placeholder="clave">
+<a class="cajon1" href="pagina.html">Vamos allá</a>
+	</form>
+     </div>
+   </div>
+   <div class="iny" id="iny">
+     Esta es toda la información
+   </div>
+   <div id="cit" class="cit">
+	<div class="titulo">Opiniones</div>
+<div class="inf o1"><div class="img"></div></div> 
+<div class="coment" id="coment">Usuario:Usuariolargoooo <br>
+Opinión: <p>textotextotextotextotextotextotextotextotextotexto </p><br>
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
+<div class="kga">
+	<div style="opacity:0 ;" id="o1" class="est"></div>
+	<div style="opacity:0 ;" id="o2" class="est"></div>
+	<div style="opacity:0 ;" id="o3" class="est"></div>
+	<div style="opacity:0 ;" id="o4" class="est"></div>
+	<div style="opacity:0 ;" id="o5" class="est"></div>
+</div>
+<script src="fun.js"></script></div>
+</div>    
+
+
+
+
 <script src="javas.js"></script>
 </body>
 </html>

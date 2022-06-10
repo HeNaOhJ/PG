@@ -1,8 +1,100 @@
-teo.style.height="1px";
+teo.style.height="0px";
 function teoria(){
     if(teo.style.height!="100%"){
     teo.style.height="100%";
     }else{
-    teo.style.height="1px";
+    teo.style.height="0px";
     }
+}
+function chatting(){
+    if (cit.style.width!="80%") {
+        cit.style.width="80%";        
+    }else{
+        cit.style.width="0px";
+    }
+}
+function oo1(){
+    o1.style.background="url(estrella.png)";
+    o1.style.backgroundSize="100%";
+    o2.style.background="url(es.png)";
+    o2.style.backgroundSize="100%";
+    o3.style.background="url(es.png)";
+    o3.style.backgroundSize="100%";
+    o4.style.background="url(es.png)";
+    o4.style.backgroundSize="100%";
+    o5.style.background="url(es.png)";
+    o5.style.backgroundSize="100%";
+    puntaje1.value="1";
+    puntaje2.value="0";
+    puntaje3.value="0";
+    puntaje4.value="0";
+    puntaje5.value="0";
+}
+function oo2(){
+    o1.style.background="url(estrella.png)";
+    o1.style.backgroundSize="100%";
+    o2.style.background="url(estrella.png)";
+    o2.style.backgroundSize="100%";
+    o3.style.background="url(es.png)";
+    o3.style.backgroundSize="100%";
+    o4.style.background="url(es.png)";
+    o4.style.backgroundSize="100%";
+    o5.style.background="url(es.png)";
+    o5.style.backgroundSize="100%";
+    puntaje1.value="1";
+    puntaje2.value="1";
+    puntaje3.value="0";
+    puntaje4.value="0";
+    puntaje5.value="0";
+}
+function oo3(){
+    o1.style.background="url(estrella.png)";
+    o1.style.backgroundSize="100%";
+    o2.style.background="url(estrella.png)";
+    o2.style.backgroundSize="100%";
+    o3.style.background="url(estrella.png)";
+    o3.style.backgroundSize="100%";
+    o4.style.background="url(es.png)";
+    o4.style.backgroundSize="100%";
+    o5.style.background="url(es.png)";
+    o5.style.backgroundSize="100%";
+    puntaje1.value="1";
+    puntaje2.value="1";
+    puntaje3.value="1";
+    puntaje4.value="0";
+    puntaje5.value="0";
+}
+function oo4(){
+    o1.style.background="url(estrella.png)";
+    o1.style.backgroundSize="100%";
+    o2.style.background="url(estrella.png)";
+    o2.style.backgroundSize="100%";
+    o3.style.background="url(estrella.png)";
+    o3.style.backgroundSize="100%";
+    o4.style.background="url(estrella.png)";
+    o4.style.backgroundSize="100%";
+    o5.style.background="url(es.png)";
+    o5.style.backgroundSize="100%";
+    puntaje1.value="1";
+    puntaje2.value="1";
+    puntaje3.value="1";
+    puntaje4.value="1";
+    puntaje5.value="0";
+}
+function oo5(){
+    o1.style.background="url(estrella.png)";
+    o1.style.backgroundSize="100%";
+    o2.style.background="url(estrella.png)";
+    o2.style.backgroundSize="100%";
+    o3.style.background="url(estrella.png)";
+    o3.style.backgroundSize="100%";
+    o4.style.background="url(estrella.png)";
+    o4.style.backgroundSize="100%";
+    o5.style.background="url(estrella.png)";
+    o5.style.backgroundSize="100%";
+    puntaje1.value="1";
+    puntaje2.value="1";
+    puntaje3.value="1";
+    puntaje4.value="1";
+    puntaje5.value="1";
 }
