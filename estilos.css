@@ -250,13 +250,13 @@ background-size: 400px;
     }
     .kga{
         position: relative;
-        margin: 0px 0px;
+        margin: -10px 0px 0px;
         display: flex;
         flex-wrap: wrap;
         background: none;
-        padding: 20px;
-        height: 40px;
-    }
+        padding: 0px;
+        height: 60px;
+    /* border: solid; */}
     .est{
         position: relative;
         width: 20px;
@@ -278,7 +278,7 @@ background-size: 400px;
     }
     .img{
         position: absolute;
-        margin: 5px 0px;
+        margin: 10px;
         background: url(usuario.png);
         background-size: 100%;
         width: 80px;
