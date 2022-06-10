@@ -36,7 +36,7 @@ function ingresar(){
 }
 ing.style.height="0px";
 function ingre(){
-    psalsa2.style.display="none";
+    pfalsa2.style.display="none";
     	cit.style.opacity="0";
     	cit.style.display="none";
     if(ing.style.height!="430px"){
@@ -48,7 +48,7 @@ function ingre(){
 }
 reg.style.height="0px";
 function regs(){
-    psalsa2.style.display="none";
+    pfalsa2.style.display="none";
     	cit.style.opacity="0";
     	cit.style.display="none";
     if(reg.style.height!="430px"){
