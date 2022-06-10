@@ -135,10 +135,10 @@ body{
 .cit{
     position: absolute;
     top: 10%;
-    margin: 10px 20%;
+    margin: 3% 20%;
     width: 0px;
     max-width: 800px;
-    background: #7ae653;
+    background: linear-gradient(120deg,rgb(48 21 159 / 69%),rgb(19 255 80 / 79%));
     transition: 2s;
     overflow: hidden;
     text-align: -webkit-center;

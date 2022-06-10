@@ -235,8 +235,7 @@ background-size: 500px;
     }       
     .cit{
         position: absolute;
-        top: 10%;
-        margin: 10px 10%;
+        margin: 3% 10%;
         width: 70%;
         max-width: 600px;
         background: linear-gradient(120deg,rgb(48 21 159 / 69%),rgb(19 255 80 / 79%));
