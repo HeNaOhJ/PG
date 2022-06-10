@@ -5,18 +5,9 @@
 	</head>
 	<body>
 <div class="base">
-<?php 
-session_start();
-$id=$_SESSION['id'];
-$conexion = new mysqli("sql309.epizy.com","epiz_31923291","PN78r9HoagBpD","epiz_31923291_PG");
-
-	$sql1 = "SELECT * FROM usuarios WHERE id = $id";
-	$resultado = $conexion->query($sql1);
-	$rx = $resultado->fetch_assoc();
-	?>
 	<div class="cu b1"><div class="inf o1"><div class="img"></div>
-		<div class="i">Usuario:<?php echo $rx['nombre']; ?></div></div>
-		<div class="inf o2">Nivel: <?php echo $rx['nivel']; ?></div>
+		<div class="i">Usuario:NIENCCNI ?></div></div>
+		<div class="inf o2">Nivel:0</div>
 		<div class="inf o3" onclick="teoria()">Acceder a Teoría</div>
 	</div>
 	<div class="cu b2"><div class="in fo1">Practicar</div>
@@ -54,22 +45,6 @@ Qué te pareció la aplicación?
 	<div id="o5" onclick="oo5()" class="est o5"></div>
 </div>
 <input style="font-size: 30px; padding: 10px 20px; position: absolute; bottom: 1%;" type="submit" name="click" value="Opinar" href="#ancla" >
-<?php 
-	if (isset($_POST['click'])){
-		$mensaje=$_POST['texto'];
-		$nombre=$_POST['nombre'];
-		$puntaje1=$_POST['puntaje1'];
-		$puntaje2=$_POST['puntaje2'];
-		$puntaje3=$_POST['puntaje3'];
-		$puntaje4=$_POST['puntaje4'];
-		$puntaje5=$_POST['puntaje5'];
-	$sqll = "INSERT INTO opin(nombre,mensaje,puntaje1,puntaje2,puntaje3,puntaje4,puntaje5) VALUES('$nombre','$mensaje','$puntaje1','$puntaje2','$puntaje3','$puntaje4','$puntaje5')";
-	$resultado = $conexion->query($sqll);
-	if ($resultado) {
-		echo "si dió";
-		header("Location:pagina.php");
-	}	}	 ?>
-<div id="respuesta1"></div>
 </div>
 
 
@@ -80,7 +55,6 @@ Qué te pareció la aplicación?
 <form method="POST" id="xd">
 			<input class="salir"  type="submit" name="salir" value="salir">
 		</form>
-<?php if (isset($_POST['salir'])){	session_destroy();header("Location:index.php");} ?>
 <script src="javas2.js"></script>
 </body>
 </html>
