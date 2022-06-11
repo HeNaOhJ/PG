@@ -2,7 +2,7 @@ body{
     display: flex;
     padding: 0;
     margin: 0;
-font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 background: url("F3.jpeg");
 background-size: 400px;
 }
