@@ -239,7 +239,7 @@ background-size: 400px;
         margin: 5% 15% 10px;
         width: 60%;
         max-width: 900px;
-        background: linear-gradient(120deg,rgb(48 21 159 / 69%),rgb(19 255 80 / 79%));
+        background: linear-gradient(120deg,rgb(48 21 159 / 99%),rgb(19 255 80 / 99%));
         transition: 2s;
         overflow: hidden;
         font-size: 30px;
