@@ -251,13 +251,13 @@ background-size: 400px;
     text-align: -webkit-center;}
     .kga{
         position: relative;
-        margin: 30px 0px 0px;
+        margin: 10px 0px 0px;
         display: flex;
         flex-wrap: wrap;
         background: none;
         padding: 0px;
         justify-content: flex-start;
-    /* border: solid; */}
+    }
     .est{
         position: relative;
         width: 50px;
