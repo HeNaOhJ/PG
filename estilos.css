@@ -247,23 +247,24 @@ background-size: 400px;
         padding: 5%;
         opacity: 0;
         display: none;
-    }
+        overflow: scroll;
+    text-align: -webkit-center;}
     .kga{
         position: relative;
-        margin: -10px 0px 0px;
+        margin: 30px 0px 0px;
         display: flex;
         flex-wrap: wrap;
         background: none;
         padding: 0px;
-        height: 60px;
+        justify-content: flex-start;
     /* border: solid; */}
     .est{
         position: relative;
-        width: 20px;
-        height: 20px;
-        background: url("estrella.png");
+        width: 50px;
+        height: 50px;
+        background: url("est4.png");
         background-size: 100%;
-        margin: 10px;
+        margin: 0px;
         padding: 10px;
         cursor: pointer;
     }
@@ -289,19 +290,93 @@ background-size: 400px;
     .coment{
         font-size: 70%;
     position: relative;
-    /* left: 0%; */
     text-align: right;
-    width: 600px;    border-block-end: inherit;
-    align-self: center;place-self: center;justify-self: center;/* height: auto; */border: solid;}
+    width: 600px;
+    border-block-end: inherit;
+    align-self: center;
+    place-self: center;
+    justify-self: center;
+    border-bottom: solid;
+    padding: 10px;
+margin: 0px 0px 0px;}
+.input{
+    width: 300px;
+    height: 50px;
+    font-size: 1em;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    background: none;
+    border-bottom: solid 2.5px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+}
     
+    .cel{
+        display: none;
+        background: none;
+        position: absolute;
+        top: 0%;
+        align-self: center;
+        margin: 5%;
+        text-align: -webkit-center;
+        font-size: 200%;
+        padding: 2% 4%;
+        width: 82%;
+        height:max-content;
+    }
+    .bt{
+        position: relative;
+        padding: 4% 5%;    
+        margin: 5%;
+        background: linear-gradient(120deg,rgb(19 255 80 / 79%),rgb(48 21 159 / 69%));
+        width: max-content;
+        border-radius: 20px;
+    }
+    .ing{
+        position: absolute;
+        width: 90%;
+        height: 0px;
+        background:white;
+        overflow: hidden;
+        margin: 3%;
+        height: 0px;
+        transition: 2s;
+        top: 0%;
+    }
+    .reg{
+        position: absolute;
+        width: 90%;
+        height:0px;
+        background:white;
+        overflow: hidden;
+        margin: 3%;
+        height: 0px;
+        transition: 2s;
+        top: 0%;
+    }
     @media only screen and (max-width:1080px) {
-        .inf{
-            
-            height:3em;
-            font-size:50px;
-                }
         .img{
-            width:100px;
-            height:100px;
+        width: 80px;
+        height:80px;
         }
+        .blateral{
+            display: none;
+        }
+        .cel{
+            display: block;
+            }
+        .regis{
+            margin: 90% 5% 5% 5%;
+        }
+        .cit{
+    margin: 5% 5% 10px;
+    width: 80%;
+    height: 75%;
+    transition: 1s;
+        }
+        .coment{
+            width: 95%;
+        }
+
     }
