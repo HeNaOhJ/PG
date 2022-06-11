@@ -336,7 +336,8 @@ margin: 0px 0px 0px;}
     }
     .ing{
         position: absolute;
-        width: 90%;
+        width: 80%;
+        padding: 5%;
         height: 0px;
         background:white;
         overflow: hidden;
@@ -347,7 +348,8 @@ margin: 0px 0px 0px;}
     }
     .reg{
         position: absolute;
-        width: 90%;
+        width: 80%;
+        padding: 5%;
         height:0px;
         background:white;
         overflow: hidden;
