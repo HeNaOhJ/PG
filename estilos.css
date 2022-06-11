@@ -239,7 +239,7 @@ background-size: 400px;
         margin: 5% 15% 10px;
         width: 60%;
         max-width: 900px;
-        background: linear-gradient(120deg,rgb(48 21 159 / 99%),rgb(19 255 80 / 99%));
+        background: linear-gradient(120deg,rgb(48 21 159 / 69%),rgb(19 255 80 / 79%));
         transition: 2s;
         overflow: hidden;
         font-size: 30px;
@@ -261,8 +261,8 @@ background-size: 400px;
     }
     .est{
         position: relative;
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height:30px;
         background: url("est4.png");
         background-size: 100%;
         margin: 0px;
@@ -283,8 +283,8 @@ background-size: 400px;
         margin: 10px;
         background: url(usuario.png);
         background-size: 100%;
-        width: 20px;
-        height:20px;
+        width: 80px;
+        height: 80px;
         border-radius: 100%;
         border: solid ;
     }
@@ -330,7 +330,7 @@ margin: 0px 0px 0px;}
         position: relative;
         padding: 4% 5%;    
         margin: 5%;
-        background: linear-gradient(120deg,rgb(19 255 80 / 79%),rgb(48 21 159 / 69%));
+        background: linear-gradient(120deg,rgb(19 255 80 / 99%),rgb(48 21 159 / 99%));
         width: max-content;
         border-radius: 20px;
     }
@@ -358,9 +358,9 @@ margin: 0px 0px 0px;}
     }
     @media only screen and (max-width:1080px) {
         .img{
-        width: 20px;
-        height:20px;
-        border-radius: 5px;
+        width: 50px;
+        height:50px;
+        border-radius: 15px;
         }
         .blateral{
             display: none;
@@ -369,7 +369,7 @@ margin: 0px 0px 0px;}
             display: block;
             }
         .regis{
-            margin: 540px 5% 5% 5%;
+            margin: 520px 5% 5% 5%;
         }
         .cit{
     margin: 5% 5% 10px;
