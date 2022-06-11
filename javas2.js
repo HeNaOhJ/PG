@@ -7,22 +7,22 @@ function teoria(){
     }
 }
 function chatting(){
-    if (cit.style.width!="70%") {
-        cit.style.width="70%";        
+    if (cit.style.width!="90%") {
+        cit.style.width="90%";        
     }else{
         cit.style.width="0px";
     }
 }
 function oo1(){
-    o1.style.background="url(estrella.png)";
+    o1.style.background="url(est4.png)";
     o1.style.backgroundSize="100%";
-    o2.style.background="url(es.png)";
+    o2.style.background="url(est2.png)";
     o2.style.backgroundSize="100%";
-    o3.style.background="url(es.png)";
+    o3.style.background="url(est2.png)";
     o3.style.backgroundSize="100%";
-    o4.style.background="url(es.png)";
+    o4.style.background="url(est2.png)";
     o4.style.backgroundSize="100%";
-    o5.style.background="url(es.png)";
+    o5.style.background="url(est2.png)";
     o5.style.backgroundSize="100%";
     puntaje1.value="1";
     puntaje2.value="0";
@@ -31,15 +31,15 @@ function oo1(){
     puntaje5.value="0";
 }
 function oo2(){
-    o1.style.background="url(estrella.png)";
+    o1.style.background="url(est4.png)";
     o1.style.backgroundSize="100%";
-    o2.style.background="url(estrella.png)";
+    o2.style.background="url(est4.png)";
     o2.style.backgroundSize="100%";
-    o3.style.background="url(es.png)";
+    o3.style.background="url(est2.png)";
     o3.style.backgroundSize="100%";
-    o4.style.background="url(es.png)";
+    o4.style.background="url(est2.png)";
     o4.style.backgroundSize="100%";
-    o5.style.background="url(es.png)";
+    o5.style.background="url(est2.png)";
     o5.style.backgroundSize="100%";
     puntaje1.value="1";
     puntaje2.value="1";
@@ -48,15 +48,15 @@ function oo2(){
     puntaje5.value="0";
 }
 function oo3(){
-    o1.style.background="url(estrella.png)";
+    o1.style.background="url(est4.png)";
     o1.style.backgroundSize="100%";
-    o2.style.background="url(estrella.png)";
+    o2.style.background="url(est4.png)";
     o2.style.backgroundSize="100%";
-    o3.style.background="url(estrella.png)";
+    o3.style.background="url(est4.png)";
     o3.style.backgroundSize="100%";
-    o4.style.background="url(es.png)";
+    o4.style.background="url(est2.png)";
     o4.style.backgroundSize="100%";
-    o5.style.background="url(es.png)";
+    o5.style.background="url(est2.png)";
     o5.style.backgroundSize="100%";
     puntaje1.value="1";
     puntaje2.value="1";
@@ -65,15 +65,15 @@ function oo3(){
     puntaje5.value="0";
 }
 function oo4(){
-    o1.style.background="url(estrella.png)";
+    o1.style.background="url(est4.png)";
     o1.style.backgroundSize="100%";
-    o2.style.background="url(estrella.png)";
+    o2.style.background="url(est4.png)";
     o2.style.backgroundSize="100%";
-    o3.style.background="url(estrella.png)";
+    o3.style.background="url(est4.png)";
     o3.style.backgroundSize="100%";
-    o4.style.background="url(estrella.png)";
+    o4.style.background="url(est4.png)";
     o4.style.backgroundSize="100%";
-    o5.style.background="url(es.png)";
+    o5.style.background="url(est2.png)";
     o5.style.backgroundSize="100%";
     puntaje1.value="1";
     puntaje2.value="1";
@@ -82,15 +82,15 @@ function oo4(){
     puntaje5.value="0";
 }
 function oo5(){
-    o1.style.background="url(estrella.png)";
+    o1.style.background="url(est4.png)";
     o1.style.backgroundSize="100%";
-    o2.style.background="url(estrella.png)";
+    o2.style.background="url(est4.png)";
     o2.style.backgroundSize="100%";
-    o3.style.background="url(estrella.png)";
+    o3.style.background="url(est4.png)";
     o3.style.backgroundSize="100%";
-    o4.style.background="url(estrella.png)";
+    o4.style.background="url(est4.png)";
     o4.style.backgroundSize="100%";
-    o5.style.background="url(estrella.png)";
+    o5.style.background="url(est4.png)";
     o5.style.backgroundSize="100%";
     puntaje1.value="1";
     puntaje2.value="1";
