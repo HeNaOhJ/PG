@@ -256,6 +256,7 @@ background-size: 400px;
         flex-wrap: wrap;
         background: none;
         padding: 0px;
+        min-width: 350px;
         justify-content: flex-start;
     }
     .est{
