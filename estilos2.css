@@ -10,7 +10,7 @@ body{
     .salir{
         position: absolute;
         align-self: flex-end;
-        bottom: -1%;
+        bottom: 5%;
         right: 20px;
         margin: 20px;
         border: none;
