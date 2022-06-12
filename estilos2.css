@@ -16,13 +16,11 @@ body{
         border: none;
         width: 120px;
         height: 120px;
-        background: url(out.png);
+        background: white;
         padding: 20px 40px;
         background-size: 100%;
-        font-size: 20px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
         cursor: pointer;
+        outline:none;
     }
 .base{
     position: relative;
