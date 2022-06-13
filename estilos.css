@@ -3,7 +3,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-background: url("F3.jpeg");
+background: url(imgs/F3.jpeg);
 background-size: 400px;
 }
 .dbarra{
@@ -82,41 +82,48 @@ background-size: 400px;
 #rg{
     position: absolute;
     left: -100%;
-    width: 80%;
+    top: 10%;width: 80%;
     height:50%;
-    align-self: center;
+    display: flex;/* flex-direction: row; *//* align-self: center; */
     border-radius: 50px;
-    background: rgba(171, 171, 171, 0.595);
+    background: none;
     transition: 2s;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
 }
 .cajaa{
     position: absolute;
     font-size: 50px;
     padding: 10px 0;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 110%;
     max-height: 550px;
     color: white;
     /* margin: 8% 20%; */
     text-align: center;
     border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: crimson;
 }
 .cj13{
     opacity: 1;
     z-index: 2;
-    background: linear-gradient(120deg,rgb(19 255 80 / 79%),rgb(48 21 159 / 69%));
+    background: linear-gradient(120deg,rgb(19 255 80 / 79%),white,white,rgb(48 21 159 / 69%));
     }
 .cj12{
     opacity: 0;
     z-index: 1;
-    background: linear-gradient(90deg,rgba(131,61,128,0.9),rgba(255,160,247,0.4));
+    background: linear-gradient(90deg,rgba(131,61,128,0.9),white,white,rgba(255,160,247,0.4));
     }
 
 .pfalsa2{
     position: absolute;
     /* display: flex; */
     width: 100%;
-    max-height: 500px;
+    max-height: 50%;
     height: 50%;
     left: 0%;
     /* min-width: 30%; */
@@ -127,7 +134,7 @@ background-size: 400px;
 }
 .frax{
     margin:2% 10%;
-    background: url(logoi.png);
+    background: url(imgs/logoi.png);
     background-size: 100%;
     width: 300px;
     height:300px;
@@ -207,7 +214,8 @@ background-size: 400px;
         font-size: 35px;
         padding: 25px;
         border-radius: 15px;
-    }
+    display: flex;
+}
     .cajon1{
     background: gray;
     border: none;
@@ -225,14 +233,28 @@ background-size: 400px;
     .iny{
         background:beige;
         position:absolute;
-        padding:20px 5%;
+        padding: 0px 5%;
         width:90%;
         height:100%;
         z-index:2;
         opacity: 0;
-        display: none;
+        display: flex;
         transition: 2s;
+        flex-flow:row wrap;
+        justify-content:center;
+        align-content: center;
     }       
+.p{
+    margin: 10px;
+    border: 1px solid;
+    width: 300px;
+    height: 220px;
+    padding: 10px;
+    
+}
+.a1{
+    order:1;
+}
     .cit{
         position: absolute;
         /* top: 10%; */
@@ -247,23 +269,22 @@ background-size: 400px;
         padding: 5%;
         opacity: 0;
         display: none;
-        overflow: scroll;
+        overflow-y: scroll;
     text-align: -webkit-center;}
     .kga{
         position: relative;
-        margin: 10px 0px 0px;
+        margin: 30px 0px 0px;
         display: flex;
         flex-wrap: wrap;
         background: none;
         padding: 0px;
-        min-width: 350px;
         justify-content: flex-start;
-    }
+    /* border: solid; */}
     .est{
         position: relative;
-        width: 30px;
-        height:30px;
-        background: url("est4.png");
+        width: 50px;
+        height: 50px;
+        background: url(imgs/est4.png);
         background-size: 100%;
         margin: 0px;
         padding: 10px;
@@ -281,7 +302,7 @@ background-size: 400px;
     .img{
         position: absolute;
         margin: 10px;
-        background: url(usuario.png);
+        background: url(imgs/usuario.png);
         background-size: 100%;
         width: 80px;
         height: 80px;
@@ -301,6 +322,7 @@ background-size: 400px;
     padding: 10px;
 margin: 0px 0px 0px;}
 .input{
+    display: flex;
     width: 300px;
     height: 50px;
     font-size: 1em;
@@ -330,14 +352,13 @@ margin: 0px 0px 0px;}
         position: relative;
         padding: 4% 5%;    
         margin: 5%;
-        background: linear-gradient(120deg,rgb(19 255 80 / 99%),rgb(48 21 159 / 99%));
+        background: linear-gradient(120deg,rgb(19 255 80 / 79%),rgb(48 21 159 / 69%));
         width: max-content;
         border-radius: 20px;
     }
     .ing{
         position: absolute;
-        width: 80%;
-        padding:0px 5%;
+        width: 90%;
         height: 0px;
         background:white;
         overflow: hidden;
@@ -348,8 +369,7 @@ margin: 0px 0px 0px;}
     }
     .reg{
         position: absolute;
-        width: 80%;
-        padding:0px 5%;
+        width: 90%;
         height:0px;
         background:white;
         overflow: hidden;
@@ -358,21 +378,34 @@ margin: 0px 0px 0px;}
         transition: 2s;
         top: 0%;
     }
+    
+.cit::-webkit-scrollbar{
+    width: 20px;
+}
+.cit::-webkit-scrollbar-thumb{
+    width: 10px;
+    background: rgba(44, 35, 213, 0.596);
+    border-radius: 9px;
+    /* margin: 5px; */
+    border-right: 5px solid rgb(71 223 53 / 95%);
+}
     @media only screen and (max-width:1080px) {
+        #rg{
+            display: none;
+        }
+        .center{
+            display: none;
+        }
         .img{
-        width: 50px;
-        height:50px;
-        border-radius: 15px;
+        width: 80px;
+        height:80px;
         }
         .blateral{
             display: none;
         }
         .cel{
-            display: block;
-            }
-        .regis{
-            margin: 500px 5% 5% 5%;
-        }
+            display: flex;
+            align-items: flex-end;flex-direction: column-reverse;align-items: center;}
         .cit{
     margin: 5% 5% 10px;
     width: 80%;

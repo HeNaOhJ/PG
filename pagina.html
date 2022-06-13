@@ -6,8 +6,8 @@
 	<body>
 <div class="base">
 	<div class="cu b1"><div class="inf o1"><div class="img"></div>
-		<div class="i">Usuario:NIENCCNI ?></div></div>
-		<div class="inf o2">Nivel:0</div>
+		<div class="i">Usuario:ICNDNCNID</div></div>
+		<div class="inf o2">Nivel:ICNDNCNID</div>
 		<div class="inf o3" onclick="teoria()">Acceder a Teoría</div>
 	</div>
 	<div class="cu b2"><div class="in fo1">Practicar</div>
@@ -31,12 +31,12 @@
 Qué te pareció la aplicación?
 <form method="POST" action="pagina.php">
 	<input value="" class="op" type="text" name="texto" placeholder=""><br>
-	<input style="opacity:0 ;" type="text" name="nombre" value="<?php echo $rx['nombre'] ?>">
-	<input style="opacity:0 ;" type="number" id="puntaje1" name="puntaje1" placeholder="puntaje" value="0"><br>
-	<input style="opacity:0 ;" type="number" id="puntaje2" name="puntaje2" placeholder="puntaje" value="0"><br>
-	<input style="opacity:0 ;" type="number" id="puntaje3" name="puntaje3" placeholder="puntaje" value="0"><br>
-	<input style="opacity:0 ;" type="number" id="puntaje4" name="puntaje4" placeholder="puntaje" value="0"><br>
-	<input style="opacity:0 ;" type="number" id="puntaje5" name="puntaje5" placeholder="puntaje" value="0"><br>
+	<input style="display:none;" type="text" name="nombre" value="">
+	<input style="display:none;" type="number" id="puntaje1" name="puntaje1" placeholder="puntaje" value="0">
+	<input style="display:none;" type="number" id="puntaje2" name="puntaje2" placeholder="puntaje" value="0">
+	<input style="display:none;" type="number" id="puntaje3" name="puntaje3" placeholder="puntaje" value="0">
+	<input style="display:none;" type="number" id="puntaje4" name="puntaje4" placeholder="puntaje" value="0">
+	<input style="display:none;" type="number" id="puntaje5" name="puntaje5" placeholder="puntaje" value="0">
 <div class="kga">
 	<div id="o1" onclick="oo1()" class="est o1"></div>
 	<div id="o2" onclick="oo2()" class="est o2"></div>
@@ -44,7 +44,8 @@ Qué te pareció la aplicación?
 	<div id="o4" onclick="oo4()" class="est o4"></div>
 	<div id="o5" onclick="oo5()" class="est o5"></div>
 </div>
-<input style="font-size: 30px; padding: 10px 20px; position: absolute; bottom: 1%;" type="submit" name="click" value="Opinar" href="#ancla" >
+<input style="font-size: 30px;padding: 10px 20px;position: relative;margin:10px;" type="submit" name="click" value="Opinar" href="#ancla" >
+<div id="respuesta1"></div>
 </div>
 
 
@@ -52,9 +53,8 @@ Qué te pareció la aplicación?
 
 
 
-<form method="POST" id="xd"><img src="out.png" class="chatt">
-			<input class="salir"  type="submit" name="salir" value="salir">
-		</form>
+<div class="salir"><img src="out.png" class="chatt">
+			<input class="sal" type="submit" name="salir" value="">
 <script src="javas2.js"></script>
 </body>
 </html>

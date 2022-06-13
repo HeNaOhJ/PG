@@ -41,9 +41,12 @@ function ingre(){
     	cit.style.display="none";
     if(ing.style.height!="430px"){
     ing.style.height="430px";
+    ing.style.padding="5%";
     reg.style.height="0px";
+    reg.style.padding="0px";
     }else{
     ing.style.height="0px";
+    ing.style.padding="0px";
     }
 }
 reg.style.height="0px";
@@ -53,9 +56,12 @@ function regs(){
     	cit.style.display="none";
     if(reg.style.height!="430px"){
         ing.style.height="0px";
-    reg.style.height="430px";
+        ing.style.padding="0px";
+        reg.style.height="430px";
+        reg.style.padding="5%";
     }else{
     reg.style.height="0px";
+    reg.style.padding="0px";
     }
 }
 function inyy() {
@@ -64,9 +70,13 @@ function inyy() {
     	cit.style.display="none";
             rg.style.left="-100%";
             center.style.opacity="0";
-    if (iny.style.display!="block") { 
+            ing.style.height="0px";
+            ing.style.padding="0px";    
+        reg.style.height="0px";
+        reg.style.padding="0px";
+    if (iny.style.display!="flex") { 
     	iny.style.opacity="1";
-    	iny.style.display="block";
+    	iny.style.display="flex";
     }else {        
     	iny.style.opacity="0";
     	iny.style.display="none";
@@ -74,7 +84,9 @@ function inyy() {
 }
 function op() {
     ing.style.height="0px";
-    reg.style.height="0px";
+    ing.style.padding="0px";
+reg.style.height="0px";
+reg.style.padding="0px";
     iny.style.opacity="0";
     iny.style.display="none";
             rg.style.left="-100%";
