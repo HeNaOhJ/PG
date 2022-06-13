@@ -238,7 +238,7 @@ background-size: 400px;
         height:100%;
         z-index:2;
         opacity: 0;
-        display: flex;
+        display: none;
         transition: 2s;
         flex-flow:row wrap;
         justify-content:center;
@@ -251,9 +251,6 @@ background-size: 400px;
     height: 220px;
     padding: 10px;
     
-}
-.a1{
-    order:1;
 }
     .cit{
         position: absolute;
@@ -370,14 +367,14 @@ margin: 0px 0px 0px;}
     .reg{
         position: absolute;
         width: 90%;
-        height:0px;
+        height: 20px;
         background:white;
-        overflow: hidden;
+        overflow: scroll;
         margin: 3%;
         height: 0px;
         transition: 2s;
         top: 0%;
-    }
+    font-size: 35px;border-radius: 10px;}
     
 .cit::-webkit-scrollbar{
     width: 20px;
@@ -414,6 +411,16 @@ margin: 0px 0px 0px;}
         }
         .coment{
             width: 95%;
+        }
+        .iny{
+            overflow: scroll;
+            padding: 20px 5%;
+            align-content: flex-start;
+        }
+        .p{
+            width: 90%;
+            height: auto;
+            font-size: 160%;
         }
 
     }
