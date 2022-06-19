@@ -102,4 +102,3 @@ reg.style.padding="0px";
         pfalsa2.style.display="block";
     }
 }
-inyy();
