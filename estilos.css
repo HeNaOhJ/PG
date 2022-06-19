@@ -234,7 +234,7 @@ background-size: 400px;
         position:absolute;
         padding: 0px 2%;
         width: 96%;
-        height: 760%;
+        height: 5000px;
         z-index:2;
         opacity: 0;
         display: none;
@@ -485,12 +485,6 @@ margin: 0px 0px 0px;}
             height: auto;
             font-size: 160%;
             margin: 2% 0px;
-        }
-        .est{
-            width: 30px;
-            height: 30px;
-            padding: 0px;
-            margin: 5px;
         }
         .a0 {order:0 ;}
         .a1 {order:1 ;}
