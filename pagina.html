@@ -32,7 +32,7 @@
 Qué te pareció la aplicación?
 <form method="POST" action="pagina.php">
 	<input value="" class="op" type="text" name="texto" placeholder=""><br>
-	<input style="display:none;" type="text" name="nombre" value="<?php echo $rx['nombre'] ?>">
+	<input style="display:none;" type="text" name="nombre" value="holaa">
 	<input style="display:none;" type="number" id="puntaje1" name="puntaje1" placeholder="puntaje" value="0">
 	<input style="display:none;" type="number" id="puntaje2" name="puntaje2" placeholder="puntaje" value="0">
 	<input style="display:none;" type="number" id="puntaje3" name="puntaje3" placeholder="puntaje" value="0">
@@ -46,21 +46,7 @@ Qué te pareció la aplicación?
 	<div id="o5" onclick="oo5()" class="est o5"></div>
 </div>
 <input style="font-size: 30px;padding: 10px 20px;position: relative;margin:10px;" type="submit" name="click" value="Opinar" href="#ancla" >
-<?php 
-	if (isset($_POST['click'])){
-		$mensaje=$_POST['texto'];
-		$nombre=$_POST['nombre'];
-		$puntaje1=$_POST['puntaje1'];
-		$puntaje2=$_POST['puntaje2'];
-		$puntaje3=$_POST['puntaje3'];
-		$puntaje4=$_POST['puntaje4'];
-		$puntaje5=$_POST['puntaje5'];
-	$sqll = "INSERT INTO opin(nombre,mensaje,puntaje1,puntaje2,puntaje3,puntaje4,puntaje5) VALUES('$nombre','$mensaje','$puntaje1','$puntaje2','$puntaje3','$puntaje4','$puntaje5')";
-	$resultado = $conexion->query($sqll);
-	if ($resultado) {
-		echo "si dió";
-		header("Location:pagina.php");
-	}	}	 ?>
+
 <div id="respuesta1"></div>
 </div>
 
@@ -70,9 +56,9 @@ Qué te pareció la aplicación?
 
 
 <form method="POST" id="xd"><div class="salir"><img src="imgs/out.png" class="chatt">
-			<input class="sal" type="submit" name="salir" value="">
+			<a class="sal" href="index.html">Salir</a>
 		</form>
-<?php if (isset($_POST['salir'])){	session_destroy();header("Location:index.php");} ?></div>
+</div>
 <script src="javas2.js"></script>
 </body>
 </html>

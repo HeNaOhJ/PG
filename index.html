@@ -18,7 +18,6 @@
             <div class="b" id="bt4">Acerca de Nosotros</div>
         </div>
 <div class="rg" id="rg">
-<?php  $conexion = new mysqli("localhost","root","","pg");  ?>
 <div id="kj2" class="cajaa cj12">
 			
       <div class="x">log in</div>
@@ -29,28 +28,6 @@
 <input class="cajon1" type="submit" name="log">
 	</form>
 	<div class="nombreb">
-    <?php 
-
-if (isset($_POST['log'])){
-  $name=$_POST['nombrae'];
-  $cla=$_POST['clav'];
-  $imagen = addslashes(file_get_contents($_FILES['im']['tmp_name']));
-  $sqlx = "SELECT * FROM usuario";
-  $ejecutar1=mysqli_query($conexion, $sqlx);
-  while ($datoo=$ejecutar1->fetch_assoc()){
-    if ($name==$datoo['nombre']) {
-      ?>
-      <script>alert("ese nombre ya está registrado");</script>
-   <?php 
-      break;
-      }
-    }
-  if($name!=$datoo['nombre']){
-    $sqly="INSERT INTO usuario(nombre,clave,imagen) VALUES ('$name','$cla','$imagen')"; 
-    $ejecutar=mysqli_query($conexion, $sqly); 
-    }
-    }
-   ?> 
 	</div>
 		</div>
 
@@ -62,25 +39,7 @@ if (isset($_POST['log'])){
   <input class="input" type="password" name="clave" placeholder="Clave">
   <input class="cajon1" type="submit" name="enviar">
     </form>
-</div><?php 
- if ($conexion){
-if (isset($_POST['enviar'])){
-$nombre=$_POST['nmbre'];
-$sql = "SELECT clave,id FROM usuario WHERE nombre='$nombre'";
-$resultado=$conexion->query($sql);
-$clave=$_POST['clave'];
-$dato=$resultado->fetch_assoc();
-  if ($clave==$dato['clave']){
-session_start();
-$_SESSION['id'] = $dato['id'];
-header("Location:pagina.php");
-                  }
-}
- }else{
-  echo " conexion f"; 
- }
-
-?>
+</div>
 </div>
 <div class="center" id="center">
   <div class="a coso" onclick="ingresar()">Ingresar</div>
@@ -248,30 +207,22 @@ Es decir, el número mixto que corresponde a la fracción impropia 52 es 212 . <
 </div>
    <div id="cit" class="cit">
 	<div class="titulo">Opiniones</div>
-<?php
-$sqlx = "SELECT * FROM opin ORDER BY id DESC";
-$ejecutar1=mysqli_query($conexion, $sqlx);
-while ($da=$ejecutar1->fetch_assoc()){
-?>
 <div class="coment" id="coment"><div class="img"></div>
-  Usuario:<?php echo $da['nombre']?> <br>
-Opinión:<?php echo $da['mensaje']?><br>
-<input style="opacity:0; display:none;" id="nm" type="number" value="<?php echo $da['puntaje1']?>">
-<input style="opacity:0; display:none;" id="nm" type="number" value="<?php echo $da['puntaje2']?>">
-<input style="opacity:0; display:none;" id="nm" type="number" value="<?php echo $da['puntaje3']?>">
-<input style="opacity:0; display:none;" id="nm" type="number" value="<?php echo $da['puntaje4']?>">
-<input style="opacity:0; display:none;" id="nm" type="number" value="<?php echo $da['puntaje5']?>">
+  Usuario:Hola bb <br>
+Opinión: Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus asperiores quos aperiam magni maiores ut ipsum, facilis cupiditate explicabo quae libero repudiandae illum accu<br>
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
+<input style="opacity:0; display:none;" id="nm" type="number" value="1">
 <div class="kga">
-	<div style="opacity:<?php echo $da['puntaje1'] ?> ;" id="o1" class="est"></div>
-	<div style="opacity:<?php echo $da['puntaje2'] ?> ;" id="o2" class="est"></div>
-	<div style="opacity:<?php echo $da['puntaje3'] ?> ;" id="o3" class="est"></div>
-	<div style="opacity:<?php echo $da['puntaje4'] ?> ;" id="o4" class="est"></div>
-	<div style="opacity:<?php echo $da['puntaje5'] ?> ;" id="o5" class="est"></div>
+	<div style="opacity:1 ;" id="o1" class="est"></div>
+	<div style="opacity:1 ;" id="o2" class="est"></div>
+	<div style="opacity:1 ;" id="o3" class="est"></div>
+	<div style="opacity:1 ;" id="o4" class="est"></div>
+	<div style="opacity:1 ;" id="o5" class="est"></div>
 </div>
-<script src="fun.js"></script>    </div>        
-        <?php  
-	}
-    ?><?php ?>
+<script src="fun.js"></script>    </div>
 </div>
 
 
