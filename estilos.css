@@ -335,7 +335,7 @@ h2{
         background: none;
         padding: 0px;
         justify-content: flex-start;
-    /* border: solid; */}
+    /* border: solid; */width: 410px;}
     .est{
         position: relative;
         width: 50px;
