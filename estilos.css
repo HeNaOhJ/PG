@@ -111,12 +111,12 @@ background-size: 400px;
 .cj13{
     opacity: 1;
     z-index: 2;
-    background: linear-gradient(120deg,rgb(19 255 80 / 79%),white,white,rgb(48 21 159 / 69%));
+    background:white;
     }
 .cj12{
     opacity: 0;
     z-index: 1;
-    background: linear-gradient(90deg,rgba(131,61,128,0.9),white,white,rgba(255,160,247,0.4));
+    background:whitesmoke;
     }
 
 .pfalsa2{
@@ -165,7 +165,6 @@ background-size: 400px;
     color: white;
     width: 80%;
     padding: 1% 10%;
-    font-family: cursive;
     transition: 2s;
 }
 .frax:hover .subt{
@@ -233,24 +232,84 @@ background-size: 400px;
     .iny{
         background:beige;
         position:absolute;
-        padding: 0px 5%;
-        width:90%;
-        height:100%;
+        padding: 0px 2%;
+        width: 96%;
+        height: 760%;
         z-index:2;
         opacity: 0;
         display: none;
         transition: 2s;
-        flex-flow:row wrap;
-        justify-content:center;
-        align-content: center;
-    }       
+        flex-flow: column wrap;
+    align-items: center;justify-content: flex-start;}       
 .p{
-    margin: 10px;
+    margin: 1%;
     border: 1px solid;
-    width: 300px;
-    height: 220px;
-    padding: 10px;
-    
+    width: 569px;
+    /* height: 280px; */
+    padding: 10px;    
+    order: 20;
+}
+.a0{
+    order: 0;
+}
+.a1{
+    order: 9;
+}
+.a2{
+    order: 1;
+}
+.a3{
+    order: 9;
+}
+.a4{
+    order: 2;
+}
+.a5{
+    order: 11;
+}
+.a6{
+    order: 11;
+}
+.a7{
+    order: 7;
+}
+.a8{
+    order: 8;
+}
+.a9{
+    order: 2;
+}
+.a10{
+    order: 12;
+}
+.a11{
+    order:3;
+}
+.a12{
+    order:12;
+}
+.a13{
+    order:13;
+}
+.a14{
+    order: 7;
+}
+.salr{
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    padding: 0px 10px;
+    background: red;
+    color: white;
+    width: 20px;
+    height: 40px;
+    border-radius: 100%;
+border: solid 5px white;font-size: 32px;}
+h1{
+    color: red;
+}
+h2{
+    color: #0162c8;
 }
     .cit{
         position: absolute;
@@ -322,10 +381,10 @@ margin: 0px 0px 0px;}
     display: flex;
     width: 300px;
     height: 50px;
-    font-size: 1em;
+    font-size: .6em;
     border: none;
     padding: 20px;
-    margin: 10px;
+    margin: 0px 5px 15px;
     background: none;
     border-bottom: solid 2.5px;
     border-bottom-left-radius: 20px;
@@ -343,7 +402,7 @@ margin: 0px 0px 0px;}
         font-size: 200%;
         padding: 2% 4%;
         width: 82%;
-        height: 90%;
+        height: 150%;
     }
     .bt{
         position: relative;
@@ -387,6 +446,9 @@ margin: 0px 0px 0px;}
     border-right: 5px solid rgb(71 223 53 / 95%);
 }
     @media only screen and (max-width:1080px) {
+        .input{
+            font-size: 1em;
+        }
         #rg{
             display: none;
         }
@@ -415,12 +477,59 @@ margin: 0px 0px 0px;}
         .iny{
             overflow: scroll;
             padding: 20px 5%;
+            flex-flow:row wrap;
             align-content: flex-start;
         }
         .p{
             width: 90%;
             height: auto;
             font-size: 160%;
+            margin: 2% 0px;
+        }
+        .a0 {
+            order:0 ;
+        }
+        .a1 {
+            order:1 ;
+        }
+        .a2 {
+            order:2 ;
+        }
+        .a3 {
+            order:3 ;
+        }
+        .a4 {
+            order:4 ;
+        }
+        .a5 {
+            order: 5;
+        }
+        .a6 {
+            order: 6;
+        }
+        .a7 {
+            order:7 ;
+        }
+        .a8 {
+            order:8 ;
+        }
+        .a9 {
+            order:9 ;
+        }
+        .a10{
+            order: 10;
+        }
+        .a11{
+            order:11
+        }
+        .a12{
+            order:12;
+        }
+        .a13{
+            order:13;
+        }
+        .a14{
+            order:14;
         }
 
     }

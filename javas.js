@@ -39,8 +39,8 @@ function ingre(){
     pfalsa2.style.display="none";
     	cit.style.opacity="0";
     	cit.style.display="none";
-    if(ing.style.height!="430px"){
-    ing.style.height="430px";
+    if(ing.style.height!="470px"){
+    ing.style.height="470px";
     ing.style.padding="5%";
     reg.style.height="0px";
     reg.style.padding="0px";
@@ -54,10 +54,10 @@ function regs(){
     pfalsa2.style.display="none";
     	cit.style.opacity="0";
     	cit.style.display="none";
-    if(reg.style.height!="430px"){
+    if(reg.style.height!="470px"){
         ing.style.height="0px";
         ing.style.padding="0px";
-        reg.style.height="430px";
+        reg.style.height="470px";
         reg.style.padding="5%";
     }else{
     reg.style.height="0px";
@@ -102,3 +102,4 @@ reg.style.padding="0px";
         pfalsa2.style.display="block";
     }
 }
+inyy();
