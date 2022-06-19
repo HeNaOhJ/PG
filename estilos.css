@@ -486,50 +486,20 @@ margin: 0px 0px 0px;}
             font-size: 160%;
             margin: 2% 0px;
         }
-        .a0 {
-            order:0 ;
-        }
-        .a1 {
-            order:1 ;
-        }
-        .a2 {
-            order:2 ;
-        }
-        .a3 {
-            order:3 ;
-        }
-        .a4 {
-            order:4 ;
-        }
-        .a5 {
-            order: 5;
-        }
-        .a6 {
-            order: 6;
-        }
-        .a7 {
-            order:7 ;
-        }
-        .a8 {
-            order:8 ;
-        }
-        .a9 {
-            order:9 ;
-        }
-        .a10{
-            order: 10;
-        }
-        .a11{
-            order:11
-        }
-        .a12{
-            order:12;
-        }
-        .a13{
-            order:13;
-        }
-        .a14{
-            order:14;
-        }
+        .a0 {order:0 ;}
+        .a1 {order:1 ;}
+        .a2 {order:2 ;}
+        .a3 {order:3 ;}
+        .a4 {order:4 ;}
+        .a5 {order:5 ;}
+        .a6 {order:6 ;}
+        .a7 {order:7 ;}
+        .a8 {order:8 ;}
+        .a9 {order:9 ;}
+        .a10{order:10;}
+        .a11{order:11;}
+        .a12{order:12;}
+        .a13{order:13;}
+        .a14{order:14;}
 
     }
