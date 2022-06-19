@@ -486,6 +486,12 @@ margin: 0px 0px 0px;}
             font-size: 160%;
             margin: 2% 0px;
         }
+        .est{
+            width: 30px;
+            height: 30px;
+            padding: 0px;
+            margin: 5px;
+        }
         .a0 {order:0 ;}
         .a1 {order:1 ;}
         .a2 {order:2 ;}
