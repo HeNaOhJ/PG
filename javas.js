@@ -1,28 +1,16 @@
-blat.style.left="-350px";
-function barra(){  
-      if (blat.style.left!="-350px") {
-          blat.style.left="-350px";            
-      }else{
-          blat.style.left="0px";
-      }
+function rr(){
+    p2.style.zIndex="1";
+    if (rg.style.right!="8%") {
+        p2.style.zIndex="1";
+    rg.style.right="8%";
+    center.style.opacity="1";         
+    }else {
+    rg.style.right="-100%";
+    center.style.opacity="0";    
+    p2.style.zIndex="0";      
+    }
   }
-  function rr(){
-      barra();
-      iny.style.opacity="0";
-      iny.style.display="none";  
-          cit.style.opacity="0";
-          cit.style.display="none";
-      if (rg.style.left!="8%") {
-        rg.style.left="8%";
-        center.style.opacity="1";
-        pfalsa2.style.display="none";          
-        }else {
-            rg.style.left="-100%";
-            center.style.opacity="0";
-            pfalsa2.style.display="block";          
-            }
-  }
-  function registrar(){
+function registrar(){
 	kj2.style.opacity="1";
 	kj3.style.opacity="0";
 	kj2.style.zIndex=20;
@@ -36,7 +24,6 @@ function ingresar(){
 }
 ing.style.height="0px";
 function ingre(){
-    pfalsa2.style.display="none";
     	cit.style.opacity="0";
     	cit.style.display="none";
     if(ing.style.height!="470px"){
@@ -65,15 +52,13 @@ function regs(){
     }
 }
 function inyy() {
-        barra();       
-    	cit.style.opacity="0";
-    	cit.style.display="none";
-            rg.style.left="-100%";
-            center.style.opacity="0";
-            ing.style.height="0px";
-            ing.style.padding="0px";    
-        reg.style.height="0px";
-        reg.style.padding="0px";
+    cit.style.opacity="0";
+    cit.style.display="none";
+    center.style.opacity="0";
+    ing.style.height="0px";
+    ing.style.padding="0px";    
+    reg.style.height="0px";
+    reg.style.padding="0px";
     if (iny.style.display!="flex") { 
     	iny.style.opacity="1";
     	iny.style.display="flex";
@@ -83,22 +68,16 @@ function inyy() {
     }
 }
 function op() {
-    ing.style.height="0px";
-    ing.style.padding="0px";
-reg.style.height="0px";
-reg.style.padding="0px";
-    iny.style.opacity="0";
-    iny.style.display="none";
-            rg.style.left="-100%";
-            center.style.opacity="0";
-        barra();
-        pfalsa2.style.display="none";
-    if (cit.style.display!="block") { 
-    	cit.style.opacity="1";
-    	cit.style.display="block";
-    }else {        
-    	cit.style.opacity="0";
-    	cit.style.display="none";
-        pfalsa2.style.display="block";
+    if (p3.style.zIndex!="1") {         
+    p3.style.zIndex="1";
+    }else{    
+        p3.style.zIndex="0";    
+    }
+}
+function co() {
+    if (p4.style.zIndex!="1") {         
+    p4.style.zIndex="1";
+    }else{    
+        p4.style.zIndex="0";    
     }
 }

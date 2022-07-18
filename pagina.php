@@ -6,10 +6,19 @@
 	</head>
 	<body>
 <div class="base">
+<?php 
+session_start();
+$id=$_SESSION['id'];
+$conexion = new mysqli("localhost","root","","pg");
+
+	$sql1 = "SELECT * FROM usuario WHERE id = $id";
+	$resultado = $conexion->query($sql1);
+	$rx = $resultado->fetch_assoc();
+	?>
 	<div class="cu b1"><div class="inf o1"><div class="img"></div>
-		<div class="i">Usuario:hola</div></div>
-		<div class="inf o2">Nivel:0</div>
-		<div class="inf o3" onclick="teoria()">Acceder a Teoría</div>
+		<div class="i">Usuario:<?php echo $rx['nombre']; ?></div></div>
+		<div class="inf o2">Nivel: <?php echo $rx['nivel']; ?></div>
+		<a class="inf o3" href="info.html">Acceder a Teoría</a>
 	</div>
 	<div class="cu b2"><div class="in fo1">Practicar</div>
 		<div class="in fo2">Evaluarme</div>
@@ -22,7 +31,7 @@
 </div>
 </div>
 <form method="POST" id="for">
-<input style=" opacity:0;" type="text" name="sesion" value="hola">			
+<input style=" opacity:0;" type="text" name="sesion" value="<?php echo $rx['nombre']; ?>">			
 		</form>	
 <div id="chat" class="chat" onclick="chatting()"><img src="imgs/chat.png" class="chatt"></div>
 
@@ -32,7 +41,7 @@
 Qué te pareció la aplicación?
 <form method="POST" action="pagina.php">
 	<input value="" class="op" type="text" name="texto" placeholder=""><br>
-	<input style="display:none;" type="text" name="nombre" value="holaa">
+	<input style="display:none;" type="text" name="nombre" value="<?php echo $rx['nombre'] ?>">
 	<input style="display:none;" type="number" id="puntaje1" name="puntaje1" placeholder="puntaje" value="0">
 	<input style="display:none;" type="number" id="puntaje2" name="puntaje2" placeholder="puntaje" value="0">
 	<input style="display:none;" type="number" id="puntaje3" name="puntaje3" placeholder="puntaje" value="0">
@@ -46,7 +55,21 @@ Qué te pareció la aplicación?
 	<div id="o5" onclick="oo5()" class="est o5"></div>
 </div>
 <input style="font-size: 30px;padding: 10px 20px;position: relative;margin:10px;" type="submit" name="click" value="Opinar" href="#ancla" >
-
+<?php 
+	if (isset($_POST['click'])){
+		$mensaje=$_POST['texto'];
+		$nombre=$_POST['nombre'];
+		$puntaje1=$_POST['puntaje1'];
+		$puntaje2=$_POST['puntaje2'];
+		$puntaje3=$_POST['puntaje3'];
+		$puntaje4=$_POST['puntaje4'];
+		$puntaje5=$_POST['puntaje5'];
+	$sqll = "INSERT INTO opin(nombre,mensaje,puntaje1,puntaje2,puntaje3,puntaje4,puntaje5) VALUES('$nombre','$mensaje','$puntaje1','$puntaje2','$puntaje3','$puntaje4','$puntaje5')";
+	$resultado = $conexion->query($sqll);
+	if ($resultado) {
+		echo "si dió";
+		header("Location:pagina.php");
+	}	}	 ?>
 <div id="respuesta1"></div>
 </div>
 
@@ -56,9 +79,9 @@ Qué te pareció la aplicación?
 
 
 <form method="POST" id="xd"><div class="salir"><img src="imgs/out.png" class="chatt">
-			<a class="sal" href="index.html">Salir</a>
+			<input class="sal" type="submit" name="salir" value="">
 		</form>
-</div>
+<?php if (isset($_POST['salir'])){	session_destroy();header("Location:index.php");} ?></div>
 <script src="javas2.js"></script>
 </body>
 </html>
