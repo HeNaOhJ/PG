@@ -353,7 +353,9 @@ h1{color: red;}h2{color: #0162c8;}
 font-size: 35px;border-radius: 10px;}    
 .ani{
     position: absolute;
-    overflow: hidden;}
+    overflow: hidden;
+    display: none;
+    }
 .am1{
     width: 350px;
     height: 350px;
@@ -379,7 +381,7 @@ font-size: 35px;border-radius: 10px;}
     border: solid red;
 }
 @media only screen and (max-width:780px) {
-    .ani{display: none;}
+    .carrusel{left: 10%;top: 20%;width: 80%;height: 30%;}
     .pfalsa2{font-size:500%;height:15%;align-items:center;}
     .input{font-size: 1em;}
     #rg{display: none;}
@@ -406,5 +408,9 @@ font-size: 35px;border-radius: 10px;}
         width: 90%;
         height: auto;
         font-size: 160%;
-        margin: 2% 0px;}
+        margin: 2% 0px;}    
     .a0 {order:0 ;}.a1 {order:1 ;}.a2 {order:2 ;}.a3 {order:3 ;}.a4 {order:4 ;}.a5 {order:5 ;}.a6 {order:6 ;}.a7 {order:7 ;}.a8 {order:8 ;}.a9 {order:9 ;}.a10{order:10;}.a11{order:11;}.a12{order:12;}.a13{order:13;}.a14{order:14;}}
+    .bo{right:20%;}
+    .b1{bottom:40%;}
+    .b2{bottom:20%;}.b2:hover{ background-color: #0d3a3a;}
+    .b3{bottom:0%;margin:0px 0 30px 0;}
