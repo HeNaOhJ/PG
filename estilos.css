@@ -379,6 +379,7 @@ font-size: 35px;border-radius: 10px;}
     border: solid red;
 }
 @media only screen and (max-width:780px) {
+    .pfalsa2{font-size:500%;height:15%;align-items:center;}
     .input{font-size: 1em;}
     #rg{display: none;}
     .center{display: none;}
