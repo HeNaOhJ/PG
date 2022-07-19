@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 	<head>
 		<title> Pagina</title>
-        <link rel="stylesheet" href="estilos2.css">
-    <link rel="shortcut icon" href="imgs/usuario.png">
+        <link rel="stylesheet" href="llaves/estilos2.css">
+    <link rel="shortcut icon" href="imag/usuario.png">
 	</head>
 	<body>
 <div class="base">
+<?php 
+session_start();
+$id=$_SESSION['id'];
+$conexion = new mysqli("localhost","root","","pg");
+
+	$sql1 = "SELECT * FROM usuario WHERE id = $id";
+	$resultado = $conexion->query($sql1);
+	$rx = $resultado->fetch_assoc();
+	?>
 	<div class="cu b1"><div class="inf o1"><div class="img"></div>
-		<div class="i">Usuario:cjrc r</div></div>
-		<div class="inf o2">Nivel: 3</div>
+		<div class="i">Usuario:<?php echo $rx['nombre']; ?></div></div>
+		<div class="inf o2">Nivel: <?php echo $rx['nivel']; ?></div>
 		<a class="inf o3" href="info.html">Acceder a Teoría</a>
 	</div>
 	<div class="cu b2"><div class="in fo1">Practicar</div>
@@ -24,7 +33,7 @@
 <form method="POST" id="for">
 <input style=" opacity:0;" type="text" name="sesion" value="<?php echo $rx['nombre']; ?>">			
 		</form>	
-<div id="chat" class="chat" onclick="chatting()"><img src="imgs/chat.png" class="chatt"></div>
+<div id="chat" class="chat" onclick="chatting()"><img src="imag/chat.png" class="chatt"></div>
 
 
 <div id="cit" class="cit">
@@ -46,6 +55,21 @@ Qué te pareció la aplicación?
 	<div id="o5" onclick="oo5()" class="est o5"></div>
 </div>
 <input style="font-size: 30px;padding: 10px 20px;position: relative;margin:10px;" type="submit" name="click" value="Opinar" href="#ancla" >
+<?php 
+	if (isset($_POST['click'])){
+		$mensaje=$_POST['texto'];
+		$nombre=$_POST['nombre'];
+		$puntaje1=$_POST['puntaje1'];
+		$puntaje2=$_POST['puntaje2'];
+		$puntaje3=$_POST['puntaje3'];
+		$puntaje4=$_POST['puntaje4'];
+		$puntaje5=$_POST['puntaje5'];
+	$sqll = "INSERT INTO opin(nombre,mensaje,puntaje1,puntaje2,puntaje3,puntaje4,puntaje5) VALUES('$nombre','$mensaje','$puntaje1','$puntaje2','$puntaje3','$puntaje4','$puntaje5')";
+	$resultado = $conexion->query($sqll);
+	if ($resultado) {
+		echo "si dió";
+		header("Location:pagina.php");
+	}	}	 ?>
 <div id="respuesta1"></div>
 </div>
 
@@ -54,7 +78,10 @@ Qué te pareció la aplicación?
 
 
 
-<a class="salir" href="index.html"><img src="imgs/out.png" class="chatt"></a>
+<form method="POST" id="xd"><div class="salir"><img src="imag/out.png" class="chatt">
+			<input class="sal" type="submit" name="salir" value="">
+		</form>
+<?php if (isset($_POST['salir'])){	session_destroy();header("Location:index.php");} ?></div>
 <script src="javas2.js"></script>
 </body>
 </html>

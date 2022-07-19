@@ -1,11 +1,10 @@
 
 body{
-    background: url("imgs/F3.jpeg");
+    background: url("../imag/F3.jpeg");
     background-size: 500px;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
     .salir{
         position: absolute;
@@ -79,7 +78,7 @@ body{
 .img{
     position: absolute;
     margin: -25px 20px;
-    background: url(imgs/usuario.png);
+    background: url(../imag/usuario.png);
     background-size: 100%;
     width: 110px;
     height: 110px;
@@ -162,7 +161,7 @@ body{
     position: relative;
     width: 60px;
     height: 60px;
-    background: url(imgs/est2.png);
+    background: url(../imag/est2.png);
     background-size: 100%;
     margin: 10px 0px;
     padding: 20px;
@@ -188,40 +187,17 @@ body{
     width: 60%;
     position: relative;
     border: none;
-    background: url(imgs/fondo.jpg);
+    background: url(../imag/fondo.jpg);
     text-align: center;
     height: 200px;
     font-size: xx-large;
     margin: 20px 0px 5px;
 }
 @media only screen and (max-width:1080px) {
-    .inf{
-        
-        height:3em;
-        font-size:50px;
-            }
-    .img{
-        width:140px;
-        height:140px;
-    }
-    .cit{
-        margin: 20% 5%;
-        height: 60%;
-    }
-    .op{
-        width: 80%;
-        height: 250px;
-    }
-    .kga{
-        margin: 20px 20px;
-    }
-    .est{
-        width: 120px;
-        height:120px;
-        padding: 0px;
-    }
-    .chat{
-        right:20%;
-        bottom:20px;
-    }
-}
+    .inf{height:3em;font-size:50px;}
+    .img{width:140px;height:140px;}
+    .cit{margin: 20% 5%;height: 60%;}
+    .op{width: 80%;height: 250px;}
+    .kga{margin: 20px 20px;}
+    .est{width: 120px;height:120px;padding: 0px;}
+    .chat{right:20%;bottom:20px;}}

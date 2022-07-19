@@ -1,4 +1,3 @@
-
     if (nm.value=="1") {
         o2.style.display="none";
         o3.style.display="none";
