@@ -77,7 +77,8 @@ body{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    color: crimson;}
+    color: crimson;
+    }
 .cj13{
     opacity: 1;
     z-index: 2;
@@ -203,7 +204,8 @@ body{
 .x{
     font-size: 200%;
     text-transform: uppercase;
-    margin: 40px 10px 10px;}
+    margin: 10px;
+    }
 .iny{
     background:beige;
     position:absolute;
@@ -382,7 +384,7 @@ font-size: 35px;border-radius: 10px;}
 @media only screen and (max-width:780px) {
     .carrusel{left: 10%;width: 80%;height: 30%;}
     .pfalsa2{font-size: 350%;flex-flow: row wrap;align-items:center;padding: 2% 0px;}
-    .input{font-size: 1em;}
+    .input{font-size: .5em;width: 200px;margin: -20px 5px 25px;padding: 15px;}
     .img{width: 80px;height:80px;}
     .cel{display: flex;align-items: flex-end;flex-direction: column-reverse;align-items: center;}
     .cit{/* margin: 5% 5% 10px; */width: 80%;height: 75%;transition: 1s;}
@@ -402,4 +404,4 @@ font-size: 35px;border-radius: 10px;}
         top: 15%;
         flex-flow: column nowrap;}
     .a{width: 85%;padding: 2%;margin: 10px 5%;font-size: 30px;}
-    #rg{bottom: 5%;width: 84%;height: 50%;}}
+    #rg{bottom: 10%;width: 84%;height: 50%;}}
