@@ -14,8 +14,6 @@ body{
     width: 100%;
     z-index: 1;
     height: 100%;}
-@font-face {font-family: Frede;src: url(../letras/Fredericka.ttf);}
-@font-face {font-family:Nanum ;src: url(../letras/Nanum.ttf);}
 .con{
     position: absolute;
     z-index: 1;
