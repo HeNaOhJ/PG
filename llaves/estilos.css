@@ -387,7 +387,7 @@ font-size: 35px;border-radius: 10px;}
     .input{font-size: .5em;width: 200px;margin: -20px 5px 25px;padding: 15px;}
     .img{width: 80px;height:80px;}
     .cel{display: flex;align-items: flex-end;flex-direction: column-reverse;align-items: center;}
-    .cit{/* margin: 5% 5% 10px; */width: 80%;height: 75%;transition: 1s;}
+    .cit{/* margin: 5% 5% 10px; */width: 80%;height: 73%;overflow-x: hidden;}
     .coment{width: 95%;}
     .iny{
         overflow: scroll;
