@@ -3,26 +3,22 @@
 		<title> Pagina</title>
         <link rel="stylesheet" href="llaves/estilos2.css">
     <link rel="shortcut icon" href="imag/usuario.png">
+	<script src="llaves/javas2.js"></script>
 	</head>
 	<body>
 <div class="base">
 	<div class="cu b1"><div class="inf o1"><div class="img"></div>
-		<div class="i">Usuario:dm</div></div>
-		<div class="inf o2">Nivel:1</div>
-		<a class="inf o3" href="info.html">Acceder a Teoría</a>
+		<div class="i">Usuario: pepe</div></div>
+		<div class="inf o2">Nivel: 1</div>
+		<a class="inf o3" onclick="teoria()">Acceder a Teoría</a>
 	</div>
 	<div class="cu b2"><div class="in fo1">Practicar</div>
 		<div class="in fo2">Evaluarme</div>
     </div>
-<div class="teoria" id="teo">
-<div class="info">Acá hay información xd v </div>
-<div class="info">Acá hay información xd v </div>
-<div class="info">Acá hay información xd v </div>
-<div class="volv" onclick="teoria()"> v </div>
 </div>
 </div>
 <form method="POST" id="for">
-<input style=" opacity:0;" type="text" name="sesion" value="nombre">			
+<input style=" opacity:0;" type="text" name="sesion" value="pepe">			
 		</form>	
 <div id="chat" class="chat" onclick="chatting()"><img src="imag/chat.png" class="chatt"></div>
 
@@ -32,7 +28,7 @@
 Qué te pareció la aplicación?
 <form method="POST" action="pagina.php">
 	<input value="" class="op" type="text" name="texto" placeholder=""><br>
-	<input style="display:none;" type="text" name="nombre" value="nombre">
+	<input style="display:none;" type="text" name="nombre" value="pepe">
 	<input style="display:none;" type="number" id="puntaje1" name="puntaje1" placeholder="puntaje" value="0">
 	<input style="display:none;" type="number" id="puntaje2" name="puntaje2" placeholder="puntaje" value="0">
 	<input style="display:none;" type="number" id="puntaje3" name="puntaje3" placeholder="puntaje" value="0">
@@ -54,9 +50,100 @@ Qué te pareció la aplicación?
 
 
 
-<form method="POST" id="xd"><div class="salir"><img src="imag/out.png" class="chatt">
-			<a class="sal" a href="index.html"></a>
-		</form>
-<script src="javas2.js"></script>
+<a href="index.html" class="salir"><img src="imag/out.png" class="chatt"></a>
+
+<div class="contenedor" id="contenedor">
+       <div id="tema1"  onclick="bx1()"  class="tema a a1 ">Inicio: División      t1 </div>
+       <!--<div id="tema2"  onclick="bx2()"  class="tema a a2 ">Representación de o/o t2 </div>
+       <div id="tema3"  onclick="bx3()"  class="tema a a3 ">Numerador             t3 </div>
+       <div id="tema4"  onclick="bx4()"  class="tema a a4 ">Denominador           t4 </div>-->
+       <div id="tema5"  onclick="bx5()"  class="tema b b5 ">Tipos: propios        t5 </div>
+       <!--<div id="tema6"  onclick="bx6()"  class="tema b b6 ">Tipos: inpropios      t6 </div>
+       <div id="tema7"  onclick="bx7()"  class="tema b b7 ">Tipos: mixtos         t7 </div>
+       <div id="tema8"  onclick="bx8()"  class="tema b b8 ">Conversiones          t8 </div>-->
+       <div id="tema9"  onclick="bx9()"  class="tema c c9 ">simplificaciones      t9 </div>
+       <!-- <div id="tema10" onclick="bx10()" class="tema c c10">reducir #             t10</div>
+       <div id="tema11" onclick="bx11()" class="tema c c11">Multiplos:            t11</div>
+       <div id="tema12" onclick="bx12()" class="tema c c12">Multiplos: x2         t12</div>
+       <div id="tema13" onclick="bx13()" class="tema c c13">Multiplos: x3         t13</div>
+       <div id="tema14" onclick="bx14()" class="tema c c14">Multiplos: x5         t14</div>
+       <div id="tema15" onclick="bx15()" class="tema c c15">Multiplos: Primos     t15</div>-->
+   </div>
+<div class="contenedor2">
+  <div id="box1" class="box b1 ">
+	<div style="position: absolute;left:80%;" onclick="bx1()">Salir</div>
+     Inicio: División  t1
+	<div class="bl" onclick="p1()">Paso 1</div>
+	<div class="body" id="pw" >
+	<div class="bl" onclick="p1()">Paso 1</div>
+	<div class="pa1" id="pa1">Los números enteros, nos ofrecen unos servicios bastante limitados frente a algunas situaciones cotidianas como por ejemplo la repartición de elementos en partes iguales, esta repartición utiliza la división para calcular lo que le corresponde a cada persona lo cual genera un inconveniente con los residuos enteros que se producen para solucionar este problema se decide eliminar el residuo entero utilizando expresiones decimales.</div>
+	<div class="pa2" id="pa2">
+		<div class="a">
+			<div class="di"></div><div class="di"></div>
+			<div class="da"></div><div class="da"></div>
+			<div class="exp1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus vitae ullam velit veniam nesciunt odit dolorem eligendi, culpa dolores laborum consectetur ad? Maxime earum vel quaerat eos fugiat! Omnis, totam. </div>
+		</div>
+		<div class="b">
+			<div class="di"></div><div class="di"></div>
+			<div class="de"></div><div class="de"></div><div class="de" style="margin: -30px 80px;"></div>
+			<div class="exp2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam natus officiis, quos velit ipsum aut minus corporis numquam deserunt odio necessitatibus. Voluptate, saepe. Rerum, aliquam laudantium nisi quae fugit est? </div></div>		
+	</div>
+	</div>
+	<div class="bl l" onclick="p2()">Paso 2</div>
+	<div class="body" id="py">
+	<div class="bl l" onclick="p2()">Paso 2</div>
+	<div class="pa1" id="pa1">Qué es una unidad? <br> A lo largo de todo el parenzidaje se va a usar una plaabra llamada unidad, que se va a usar a lo largo de todo, esto hace referencia a un elemento el cual puede ser segmentado en partes iguales, estas divisiones pueden ser usadas de distintas formas pero cuando no han sido manipulaadeas de ninguna frma, la unidad se manifiesta como 1 o en su defecto cantidad de partes/ cantidad de partes</div>
+	<div class="pa2" id="pa2">
+		<div class="a">
+			<div class="y y1"></div>
+			<div class="y y2"></div>
+			<div class="y y3"></div>
+			<div class="y y4"></div>
+		</div>
+		<div class="b">Esta chocolatina se puede dividir en diferentes partes, pero al fin y al cabo, si todas sus partes se unen, seguirá siendo la misma unidad de la chocolatina, y se puede representar como 4/4</div>
+	</div>
+	</div>
+	<div class="bl ll" onclick="p3()">Paso 3</div>
+	<div class="body" id="pz">
+	<div class="bl ll" onclick="p3()">Paso 3</div>	
+	<div class="pa2">		hola	</div>
+	</div>
+	<div class="bl lll" onclick="p4()">Paso 4</div>
+	<div class="body" id="ps">
+	<div class="bl lll" onclick="p4()">Paso 4</div>
+	<div class="pa1" id="pa1">Lo que debes hacer en este momento es usar las opciones con los numeros que se muestran de dos colores, para poder formar la unidad con base en una fracción</div>
+	<div class="pa2"><div class="tec">
+		<input value="0" type="text" class="te" id="tea">
+		<span class="spa"></span>
+		<input value="0" type="text" class="te" id="teb">
+		<div value="1" class="te" id="tea1" onclick="ta1()">1</div>
+		<div value="2" class="te" id="tea2" onclick="ta2()">2</div>
+		<div value="3" class="te" id="tea3" onclick="ta3()">3</div>
+		<div value="1" class="te" id="teb1" onclick="tb1()">1</div>
+		<div value="2" class="te" id="teb2" onclick="tb2()">2</div>
+		<div value="3" class="te" id="teb3" onclick="tb3()">3</div>
+		<div class="in fo3" id="info1">La unidad esta representada correctamente, pues hay la misma cantidad arriba y abajo</div>
+	<div class="in fo2" id="info2">recuerda que debe haber igual arriba y abajo, esto no es una unidad ya que en el denominador (la parte de abajo) hay mas que en el numerador</div>
+		<div class="in fo1" id="info3">recuerda que debe haber igual arriba y abajo, esto no es una unidad ya que en el numerador (la parte de arriba) hay mas que en el denominador</div>		
+		</div> </div>
+	</div>
+</div>
+   <div id="box2"  class="box b2 ">Repre de o/o      t2  <div style="position: absolute;left:80%;" onclick="bx2()">Salir</div></div>
+   <div id="box3"  class="box b3 ">Numerador         t3  <div style="position: absolute;left:80%;" onclick="bx3()">Salir</div></div>
+   <div id="box4"  class="box b4 ">Denominador       t4  <div style="position: absolute;left:80%;" onclick="bx4()">Salir</div></div>
+   <div id="box5"  class="box b5 ">Tipos: propios    t5  <div style="position: absolute;left:80%;" onclick="bx5()">Salir</div></div>
+   <div id="box6"  class="box b6 ">Tipos: inpropios  t6  <div style="position: absolute;left:80%;" onclick="bx6()">Salir</div></div>
+   <div id="box7"  class="box b7 ">Tipos: mixtos     t7  <div style="position: absolute;left:80%;" onclick="bx7()">Salir</div></div>
+   <div id="box8"  class="box b8 ">Conversiones      t8  <div style="position: absolute;left:80%;" onclick="bx8()">Salir</div></div>
+   <div id="box9"  class="box b9 ">simplificaciones  t9  <div style="position: absolute;left:80%;" onclick="bx9()">Salir</div></div>
+   <div id="box10" class="box b10">reducir #         t10 <div style="position: absolute;left:80%;" onclick="bx10()">Salir</div></div>
+   <div id="box11" class="box b11">Multiplos:        t11 <div style="position: absolute;left:80%;" onclick="bx11()">Salir</div></div>
+   <div id="box12" class="box b12">Multiplos: x2     t12 <div style="position: absolute;left:80%;" onclick="bx12()">Salir</div></div>
+   <div id="box13" class="box b13">Multiplos: x3     t13 <div style="position: absolute;left:80%;" onclick="bx13()">Salir</div></div>
+   <div id="box14" class="box b14">Multiplos: x5     t14 <div style="position: absolute;left:80%;" onclick="bx14()">Salir</div></div>
+   <div id="box15" class="box b15">Multiplos: Primos t15 <div style="position: absolute;left:80%;" onclick="bx15()">Salir</div></div>
+</div>
+<script>
+teoria();bx1();</script>
 </body>
 </html>
