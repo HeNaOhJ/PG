@@ -107,11 +107,9 @@ function cloe(){
 function bx1()  {
   if (box1.style.display!="block"){
   box1.style.display="block";
-  box1.style.width ="90%";
-  box1.style.height="80%";
-  box1.style.padding="5%";
-  box1.style.left="50%";
   }else{
+    
+  box1.style.display="none";
      cloe();
   }}
 function bx5()  {

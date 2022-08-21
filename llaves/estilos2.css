@@ -241,13 +241,11 @@ body{
    background-color: rgb(255, 124, 189);
 }
 .contenedor2 .box{
+   display:none;
  position: absolute;
  opacity: 1;
  background-color: rgb(35, 100, 100);
- width: 0%;
- height: 0%;
- padding: 0% 0%;
- top: 50%;  left:-50%;
+ top: 50%;
  transition-delay: 2s;
  transition: 2s;
  transform: translate(-50%,-50%);
@@ -256,6 +254,10 @@ body{
  max-height: 1000px;
  /* font-family: system-ui; */
  z-index: 1;
+ width :90%;
+ height:80%;
+ padding:5%;
+ left:50%;
 }
 .bl{
   position: absolute;
