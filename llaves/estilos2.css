@@ -55,10 +55,12 @@ body{
    height: min-content;
    }
 .inf{
-   padding: 20px 0;
+   padding: 20px;
+   position: absolute;
    border: solid #55e7fc;
-   width: 17.6em;
-   margin: 10% 0;
+   width: 200px;
+   height: 100px;
+   /* margin: 10% 0; */
    background: hsl(160deg 100% 19% / 42%);
    border-radius: 20px;
 }
@@ -74,6 +76,21 @@ body{
 .o1{
    height: 80px;
    padding: 60px 0 30px;
+   left: 10%;
+   top: 10%;
+}
+.o2{
+ /* position:absolute; */
+ top: 30%;
+ left: 10%;
+}
+.o3{
+ /* position:absolute; */
+ left: 10%;
+ bottom: 10%;
+}
+.o3{
+ position:absolute;
 }
 .img{
    position: absolute;
@@ -96,9 +113,6 @@ body{
    border-radius:20px;
 
 }
-.o3{
-   margin: 10% 0 0%;
-}	
 .chatt{
    width:100%;
 }
