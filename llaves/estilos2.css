@@ -8,18 +8,18 @@ body{
 @font-face {font-family: Frede;src: url(../letras/Fredericka.ttf);}@font-face {font-family:Nanum ;src: url(../letras/Nanum.ttf);}
 .salir{
        position: absolute;
-       align-self: flex-end;
-       bottom: 1%;
+       /* align-self: flex-end; */
+       /* bottom: 1%; */
        right: 20px;
-       margin: 20px;
+       margin: 0 20px;
        border: none;
        width: 80px;
        height:80px;
        background: white;
-       padding: 20px 40px;
-       cursor: pointer;        
-   padding: 10px;
-   border-radius: 10px;
+       /* padding: 20px 40px; */
+       cursor: pointer;
+       padding: 10px;
+       border-radius: 10px;
    }
    .sal{
    width: 100%;
@@ -122,11 +122,11 @@ body{
 }
 .chat{
    padding: 10px;
-   margin: 20px;
+   margin: 0 20px;
    background: azure;
    position: absolute;
-   bottom:20%;
-   right: 20px;
+   /* bottom:20%; */
+   right: 180px;
    width: 80px;
    height:80px;
    border-radius: 10px;
