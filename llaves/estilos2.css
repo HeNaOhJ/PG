@@ -11,7 +11,7 @@ body{
        /* align-self: flex-end; */
        /* bottom: 1%; */
        right: 20px;
-       margin: 0 40px;
+       margin: 5px 50px;
        border: none;
        width: 80px;
        height:80px;
@@ -123,7 +123,7 @@ body{
 }
 .chat{
    padding: 10px;
-   margin: 0 40px;
+   margin: 5px 50px;
    background: azure;
    position: absolute;
    bottom:20%;
