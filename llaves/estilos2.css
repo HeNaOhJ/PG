@@ -670,4 +670,10 @@ body{
  .pa2 .b{
   width: 270px;
  }
+ #ps .pa1{
+   transform: translateX(-50%);
+   top: 20%;
+   left: 50%;
+   width:280px;
+ }
    }
