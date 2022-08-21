@@ -568,6 +568,10 @@ body{
       width: 120px;
       height:120px;
       padding: 0px;}
+.o1o{position:absolute;}
+.o2o{position:absolute;}
+.o3o{position:absolute;}      
+.o4o{position:absolute;}      
    .chat{
       position:relative;
    }}
