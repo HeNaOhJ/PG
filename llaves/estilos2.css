@@ -1,13 +1,12 @@
 body{
-   background: url("../imag/F3.jpeg");
+   background: url("../imag/fondo00.png");
    background-size: 500px;
    padding: 0;
    margin: 0;
    overflow: hidden;
-           }
+   }
 @font-face {font-family: Frede;src: url(../letras/Fredericka.ttf);}@font-face {font-family:Nanum ;src: url(../letras/Nanum.ttf);}
-
-   .salir{
+.salir{
        position: absolute;
        align-self: flex-end;
        bottom: 1%;
@@ -57,10 +56,10 @@ body{
    }
 .inf{
    padding: 20px 0;
-   /* border: solid #55e7fc; */
+   border: solid #55e7fc;
    width: 17.6em;
    margin: 10% 0;
-   background: hsl(160deg 100% 75% / 42%);
+   background: hsl(160deg 100% 19% / 42%);
    border-radius: 20px;
 }
 .in{
@@ -68,7 +67,7 @@ body{
    /* border: solid #55e7fc; */
    width: 17.6em;
    margin: 10% 0;
-   background: hsl(160deg 100% 75% / 42%);
+   background: hsl(160deg 100% 12% / 42%);
    border-radius: 20px;
    height: 150px;
 }
@@ -175,7 +174,7 @@ body{
    background-color: rgb(235, 102, 102);
    position: absolute;
    justify-self: center;
-   flex-flow: row wrap;
+   flex-flow: column wrap;
    align-items: center;
    justify-content: center;
 }
@@ -429,7 +428,6 @@ body{
    100%{transform:translate(0px,0px);}
 }
 .tec{
-   /* display: flex; */
    position: absolute;
    background: #dbffc9;
    width: 90%;
@@ -519,14 +517,38 @@ body{
    font-size: 23px;
 }
 @media only screen and (max-width:780px) {
-   body{background-color: aquamarine;}
- .contenedor{position: absolute;max-width:100%;height: 100%;}
- .contenedor .tema{width: 60px;height: 60px;margin: 3%;font-size: 16px;}
- .contenedor2 .box{height: 97%;}
-   .inf{height:3em;font-size:50px;}
-   .img{width:140px;height:140px;}
-   .cit{margin: 20% 5%;height: 60%;}
-   .op{width: 80%;height: 250px;}
-   .kga{margin: 20px 20px;}
-   .est{width: 120px;height:120px;padding: 0px;}
-   .chat{right:20%;bottom:20px;}}
+   body{
+      background: aquamarine;}
+ .contenedor{
+   position: absolute;
+   max-width:100%;
+   max-height: 100%;
+   flex-flow:column nowrap;}
+ .contenedor .tema{
+   width: 60px;
+   height: 60px;
+   margin: 3%;
+   font-size: 16px;}
+ .contenedor2 .box{
+   height: 97%;}
+   .inf{
+      height:3em;
+      font-size:50px;}
+   .img{
+      width:140px;
+      height:140px;}
+   .cit{
+      margin: 20% 5%;
+      height: 60%;}
+   .op{
+      width: 80%;
+      height: 250px;}
+   .kga{
+      margin: 20px 20px;}
+   .est{
+      width: 120px;
+      height:120px;
+      padding: 0px;}
+   .chat{
+      right:20%;
+      bottom:20px;}}
