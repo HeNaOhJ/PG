@@ -84,9 +84,9 @@ body{
  text-align: center;
 }
 .o4o{
-   right: 15%;
-   top: 40%;
-   height: 400px;
+   right: 10%;
+   top: 30%;
+   height: 350px;
    width: 250px;
    font-size: 300%;
 }
@@ -126,7 +126,7 @@ body{
    margin: 5px 50px;
    background: azure;
    position: absolute;
-   bottom:20%;
+   /* bottom:20%; */
    right: 180px;
    width: 80px;
    height:80px;
