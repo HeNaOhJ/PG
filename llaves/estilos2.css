@@ -569,5 +569,5 @@ body{
       height:120px;
       padding: 0px;}
    .chat{
-      right:20%;
-      bottom:20px;}}
+      position:relative;
+   }}
