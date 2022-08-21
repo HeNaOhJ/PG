@@ -33,13 +33,15 @@ body{
    cursor: pointer;
    }
 .inf{
-   padding: 20px;
    position: absolute;
-   border: solid #55e7fc;
-   width: 200px;
+   padding: 20px;
+   width: 250px;
    height: 100px;
-   background: hsl(160deg 100% 19% / 42%);
    border-radius: 20px;
+   font-family: Nanum;
+   border: solid 5px #00a0d7;
+   color: #59c7ed;
+   background: #00288c;
 }
 .o1{
    height: 80px;
@@ -58,7 +60,6 @@ body{
    color: #59c7ed;
    background: #00288c;
    width: 250px;
-   transform: translateX(-50%);
    }
    .pfalsa2{position: absolute;padding: 1% 0px;width: 100%;left: 0%;z-index: 1;background: #00288c;background-size: 100%;display: flex;font-family: Frede;font-size: 550%;text-transform: uppercase;color: #d9d9d9;justify-content: center;border-bottom: solid 12px #00a0d7;}
 
