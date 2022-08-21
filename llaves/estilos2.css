@@ -537,6 +537,7 @@ body{
 @media only screen and (max-width:780px) {
    body{
       background: aquamarine;}
+      .pfalsa2{font-size: 300%;flex-flow: row wrap;align-items:center;padding: 2% 0px;}
  .contenedor{
    position: absolute;
    max-width:100%;
