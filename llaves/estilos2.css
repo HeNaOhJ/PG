@@ -557,6 +557,7 @@ body{
       width:140px;
       height:140px;}
    .cit{
+      position:relative;
       margin: 20% 5%;
       height: 60%;}
    .op{
@@ -569,6 +570,7 @@ body{
       height:120px;
       padding: 0px;}
    .chat{
+      position:relative;
       /* right:20%; */
       /* bottom:20px; */
       }
