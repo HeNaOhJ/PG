@@ -105,8 +105,7 @@ function cloe(){
   tema9.style.backgroundColor= "rgb(255, 124, 189)";box9.style.left= "-50%";
 }
 function bx1()  {
-  if (tema1.style.backgroundColor!="green"){
-  tema1.style.backgroundColor="green";
+  if (box1.style.display!="block"){
   box1.style.display="block";
   box1.style.width ="90%";
   box1.style.height="80%";

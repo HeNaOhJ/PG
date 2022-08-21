@@ -43,7 +43,7 @@ body{
    color: #59c7ed;
    background: #00288c;
 }
-.o1{
+.o1o{
    height: 80px;
    /* padding: 60px 0 30px; */
    left: 5%;
@@ -51,7 +51,7 @@ body{
    width: 400px;
    height: 350px;
 }
-.o2{
+.o2o{
    position: absolute;
    width: 200px;
    padding: 10px;
@@ -75,14 +75,14 @@ body{
    }
    .pfalsa2{position: absolute;padding: 1% 0px;width: 100%;left: 0%;z-index: 1;background: #00288c;background-size: 100%;display: flex;font-family: Frede;font-size: 550%;text-transform: uppercase;color: #d9d9d9;justify-content: center;border-bottom: solid 12px #00a0d7;}
 
-.o3{
+.o3o{
  left: 40%;
  bottom: 10%;
  font-size: 300%;
  text-transform: uppercase;
  text-align: center;
 }
-.o4{
+.o4o{
    right: 15%;
    top: 30%;
    height: 400px;
