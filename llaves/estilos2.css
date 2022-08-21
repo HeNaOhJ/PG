@@ -8,15 +8,12 @@ body{
 @font-face {font-family: Frede;src: url(../letras/Fredericka.ttf);}@font-face {font-family:Nanum ;src: url(../letras/Nanum.ttf);}
 .salir{
        position: absolute;
-       /* align-self: flex-end; */
-       /* bottom: 1%; */
        right: 20px;
        margin: 5px 50px;
        border: none;
        width: 80px;
        height:80px;
        background: white;
-       /* padding: 20px 40px; */
        cursor: pointer;
        padding: 10px;
        border-radius: 10px;
@@ -311,7 +308,8 @@ body{
    align-items: center;
 }
 .pa2 .a{
-   position: relative;
+   position: absolute;
+   left: 30px;
    width: 90%;
    height: 45%;
    background-color: #dbffc9;
@@ -349,6 +347,7 @@ body{
 }
 .pa2 .b{
    position: absolute;
+   left: 30px;
    display: flex;
    align-self: flex-end;
    flex-flow: row wrap;
@@ -649,10 +648,26 @@ body{
    }
  .pa1{
    transform: translateX(-50%);
+   top: 20%;
    left: 50%;
+   width: 80%;
   }
   .pa2{
    transform: translateX(-50%);
    left: 50%;
+   top: 85%;
+   width: 80%;
   }   
+ .body{
+  overflow-y:scroll;
+ }
+ .di{
+  margin: 5px 30px;
+ }
+ .pa2 .a{
+  width: 270px;
+ }
+ .pa2 .b{
+  width: 270px;
+ }
    }
