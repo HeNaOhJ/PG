@@ -184,18 +184,20 @@ body{
 .salr{position: fixed;right: 5px;top: 5px;padding: 5px;background: red;color: white;width: 40px;height: 40px;border-radius: 100%;border: solid 5px white;font-size: 35px;text-align: center;z-index: 2;font-family: sans-serif;text-transform: uppercase;}
 .contenedor{
    margin: 0% 0px 0px 0px;
-   top: 0%;
+   top: 20%;
    right: 0%;
-   max-width: 35%;
-   height: 100%;
+   width: 35%;
+   height: 80%;
    overflow-y: scroll;
    display: none;
-   background-color: rgb(235, 102, 102);
+   background: url("../imag/fondo1.png");
+   background-size: 200px;
    position: absolute;
    justify-self: center;
    flex-flow: column wrap;
    align-items: center;
    justify-content: center;
+   border-left: solid 12px #00a0d7;
 }
 .body{
    position: absolute;
@@ -221,7 +223,7 @@ body{
    height: 90px;
    border-radius: 15px;
    background-color: rgb(95, 171, 171);
-   margin:30px 10px;
+   margin: 10px 30px;
    opacity: 1;
    font-size: 16px;
 }
