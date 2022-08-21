@@ -7,11 +7,11 @@ body{
    }
 @font-face {font-family: Frede;src: url(../letras/Fredericka.ttf);}@font-face {font-family:Nanum ;src: url(../letras/Nanum.ttf);}
 .salir{
-       position: absolute;
+       /* position: absolute; */
        /* align-self: flex-end; */
        /* bottom: 1%; */
        right: 20px;
-       margin: 0 20px;
+       margin: 0 30px;
        border: none;
        width: 80px;
        height:80px;
@@ -122,9 +122,9 @@ body{
 }
 .chat{
    padding: 10px;
-   margin: 0 20px;
+   margin: 0 30px;
    background: azure;
-   position: absolute;
+   /* position: absolute; */
    /* bottom:20%; */
    right: 180px;
    width: 80px;
@@ -569,5 +569,19 @@ body{
       height:120px;
       padding: 0px;}
    .chat{
-      right:20%;
-      bottom:20px;}}
+      /* right:20%; */
+      /* bottom:20px; */
+      }
+.o1o{
+   position:absolute;
+}
+.o2o{
+   position:absolute;
+}
+.o3o{
+   position:absolute;
+}
+.o4o{
+   position:absolute;
+} 
+   }
