@@ -52,8 +52,13 @@ body{
    height: 300px;
 }
 .o2{
- top: 30%;
- left: 10%;
+   position: absolute;
+   padding: 10px;
+   font-size:150%;
+   background: #9f7fff40;
+   right: 40px;
+   border:solid;
+   border-radius:20px;
 }
 .bo{position: absolute;
    font-family: Nanum;
