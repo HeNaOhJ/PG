@@ -32,46 +32,14 @@ body{
    outline: none;
    cursor: pointer;
    }
-.base{
-   position: relative;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   width: 90%;
-   margin: 0% 5%;
-   height: min-content;
-   align-self: flex-end;
-}
-.cu{
-   position: relative;
-   padding: 20px;
-   margin: 20px;
-   border-radius: 30px;
-   overflow: hidden;
-   letter-spacing: 2px;
-   font-size: 183%;
-   text-align: center;
-   text-transform: uppercase;
-   height: min-content;
-   }
 .inf{
    padding: 20px;
    position: absolute;
    border: solid #55e7fc;
    width: 200px;
    height: 100px;
-   /* margin: 10% 0; */
    background: hsl(160deg 100% 19% / 42%);
    border-radius: 20px;
-}
-.in{
-   padding: 20px 0;
-   /* border: solid #55e7fc; */
-   width: 17.6em;
-   margin: 10% 0;
-   background: hsl(160deg 100% 12% / 42%);
-   border-radius: 20px;
-   height: 150px;
 }
 .o1{
    height: 80px;
@@ -80,12 +48,10 @@ body{
    top: 10%;
 }
 .o2{
- /* position:absolute; */
  top: 30%;
  left: 10%;
 }
 .o3{
- /* position:absolute; */
  left: 10%;
  bottom: 10%;
 }
