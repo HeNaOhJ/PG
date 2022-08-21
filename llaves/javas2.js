@@ -1,8 +1,10 @@
 function teoria(){
     if(contenedor.style.display!="flex"){
     contenedor.style.display="flex";
+    prac.style.display="none";
     }else{
     contenedor.style.display="none";
+    prac.style.display="block";
     }
 }
 function chatting(){
